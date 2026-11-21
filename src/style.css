@@ -1,0 +1,139 @@
+* { box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  font-family: system-ui, "Microsoft YaHei", "PingFang SC", sans-serif;
+}
+
+#root { display: flex; flex-direction: column; }
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 16px;
+  background: #10151d;
+  color: #e6edf5;
+  flex: none;
+}
+
+header h1 { font-size: 16px; margin: 0; font-weight: 600; }
+
+.badges { display: flex; gap: 8px; flex: 1; flex-wrap: wrap; }
+
+.badge {
+  font-size: 12px;
+  background: #1d2632;
+  border: 1px solid #2c3a4d;
+  border-radius: 10px;
+  padding: 2px 10px;
+  color: #9fb2c8;
+}
+.badge.on { color: #7ee2a0; border-color: #2f6b45; }
+.badge.warn { color: #ff9a9a; border-color: #6b2f2f; }
+
+.views { display: flex; gap: 6px; }
+
+button {
+  background: #1d2632;
+  color: #cfe0f0;
+  border: 1px solid #2c3a4d;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 13px;
+  cursor: pointer;
+}
+button:hover { background: #263344; }
+button.active, button.primary { background: #2563eb; border-color: #2563eb; color: #fff; }
+button.danger { color: #ff9a9a; border-color: #6b2f2f; }
+button.danger:hover { background: #3a1d1d; }
+
+main { flex: 1; display: flex; min-height: 0; }
+
+.viewport { flex: 1; position: relative; min-width: 0; }
+.viewport canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+
+.hint {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(16, 21, 29, 0.85);
+  color: #cfe0f0;
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 16px;
+  pointer-events: none;
+}
+
+aside {
+  width: 360px;
+  flex: none;
+  background: #141a24;
+  color: #dfe6ee;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #232e3d;
+  min-height: 0;
+}
+
+.steps { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; padding: 10px; }
+.steps button { text-align: left; padding: 8px 10px; line-height: 1.3; }
+.steps button b { display: block; font-size: 13px; }
+.steps button small { color: #8fa3bb; font-size: 11px; }
+.steps button.active small { color: #d5e4ff; }
+
+.panel { flex: 1; overflow-y: auto; padding: 4px 14px 20px; }
+.panel h2 { font-size: 15px; margin: 10px 0 6px; }
+.panel h3 { font-size: 13px; margin: 14px 0 6px; color: #9fb2c8; }
+.tip { font-size: 12px; color: #8fa3bb; line-height: 1.6; }
+.stale { font-size: 12px; color: #ffcf7a; }
+
+.row { display: flex; gap: 8px; margin: 8px 0; align-items: center; flex-wrap: wrap; }
+
+.camlist { list-style: none; margin: 0; padding: 0; max-height: 260px; overflow-y: auto; }
+.camlist li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.camlist li:hover { background: #1d2632; }
+.camlist li.sel { background: #22344f; }
+.camlist li span { flex: 1; }
+.camlist li em { font-style: normal; color: #8fa3bb; font-size: 12px; }
+.camlist .del { padding: 0 7px; font-size: 14px; line-height: 1.4; }
+
+.slider { display: flex; align-items: center; gap: 8px; margin: 8px 0; font-size: 12px; }
+.slider span { width: 60px; flex: none; color: #9fb2c8; }
+.slider input { flex: 1; min-width: 0; }
+.slider b { width: 52px; text-align: right; font-weight: 500; }
+
+.check { display: flex; align-items: center; gap: 6px; font-size: 12px; color: #9fb2c8; margin: 10px 0; }
+.check.inline { margin: 0; }
+
+.stat { font-size: 13px; margin: 10px 0; }
+.stat b { color: #7ec8ff; }
+
+.stats { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 10px 0; }
+.stats > div {
+  background: #1a2230;
+  border: 1px solid #26334a;
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-size: 12px;
+}
+.stats span { display: block; color: #8fa3bb; margin-bottom: 3px; }
+.stats b { font-size: 15px; color: #7ec8ff; }
+.stats b.red { color: #ff8a8a; }
+
+table { width: 100%; border-collapse: collapse; font-size: 12px; margin-top: 6px; }
+th, td { text-align: left; padding: 5px 8px; border-bottom: 1px solid #232e3d; }
+th { color: #8fa3bb; font-weight: 500; }
+tbody tr { cursor: pointer; }
+tbody tr:hover { background: #1d2632; }
+tbody tr.sel { background: #22344f; }
