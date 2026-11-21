@@ -1,0 +1,36 @@
+{
+  "name": "platform-heat-sim",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "站台客流热力仿真工具 - TypeScript / React / three.js / three-mesh-bvh",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5199 --strictPort",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test tests/core.test.ts",
+    "test:e2e": "node tests/e2e/smoke.mjs",
+    "bench": "node tests/cap.ts"
+  },
+  "dependencies": {
+    "fflate": "^0.8.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "three": "^0.179.1",
+    "three-mesh-bvh": "^0.9.1",
+    "zustand": "^5.0.6"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@types/three": "^0.179.0",
+    "@vitejs/plugin-react": "^4.6.0",
+    "playwright": "^1.65.1",
+    "typescript": "^5.8.3",
+    "vite": "^7.0.0"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  }
+}
