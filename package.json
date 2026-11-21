@@ -1,0 +1,21 @@
+{
+  "name": "dust-volume-viewer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "gen-data": "node tools/generateSampleData.mjs",
+    "test": "node --test test/unit.test.js",
+    "test:e2e": "node test/smoke.mjs && node test/axis.mjs && node test/stress.mjs && node test/reload.mjs"
+  },
+  "dependencies": {
+    "three": "^0.180.0",
+    "three-mesh-bvh": "^0.9.0"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  }
+}
