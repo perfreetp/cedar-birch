@@ -1,0 +1,26 @@
+{
+  "name": "burn-scar-rebuilder",
+  "version": "1.0.0",
+  "private": true,
+  "description": "灾后林地火烧迹地边界重建工具（TypeScript + Web Components + three.js + manifold-3d）",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test:unit": "node scripts/unit-extract.mjs && node scripts/unit-manifold.mjs"
+  },
+  "dependencies": {
+    "manifold-3d": "^2.5.1",
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.180.0",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5"
+  },
+  "allowScripts": {
+    "esbuild@0.25.12": true
+  }
+}

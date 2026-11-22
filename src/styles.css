@@ -1,0 +1,145 @@
+:root {
+  --bg: #0f141b;
+  --bg-panel: #171e28;
+  --bg-panel-2: #1f2937;
+  --border: #2b3748;
+  --fg: #dbe4ef;
+  --fg-dim: #8fa0b5;
+  --accent: #ff7a45;
+  --accent-2: #36b37e;
+  --danger: #ff5c7a;
+  --info: #4da3ff;
+  --shadow: 0 6px 24px rgba(0, 0, 0, 0.45);
+  font-family: 'Segoe UI', 'Microsoft YaHei', system-ui, sans-serif;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--fg);
+  font-size: 13px;
+  overflow: hidden;
+}
+
+button {
+  font: inherit;
+  color: var(--fg);
+  background: var(--bg-panel-2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+button:hover:not(:disabled) {
+  background: #2a384a;
+  border-color: #3d5068;
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+button.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #1a1008;
+  font-weight: 600;
+}
+
+button.primary:hover:not(:disabled) {
+  background: #ff9164;
+}
+
+button.ghost {
+  background: transparent;
+}
+
+input[type='range'] {
+  width: 100%;
+  accent-color: var(--accent);
+}
+
+input[type='number'],
+select {
+  width: 100%;
+  background: var(--bg);
+  color: var(--fg);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 5px 7px;
+  font: inherit;
+}
+
+input[type='color'] {
+  width: 42px;
+  height: 26px;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background: var(--bg);
+  cursor: pointer;
+}
+
+label {
+  color: var(--fg-dim);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 5px 6px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+}
+
+th {
+  color: var(--fg-dim);
+  font-weight: 500;
+}
+
+.muted {
+  color: var(--fg-dim);
+}
+
+.mono {
+  font-family: 'Cascadia Code', Consolas, monospace;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.tag {
+  display: inline-block;
+  padding: 1px 7px;
+  border-radius: 10px;
+  font-size: 11px;
+  background: var(--bg-panel-2);
+  border: 1px solid var(--border);
+  color: var(--fg-dim);
+}
+
+.tag.ok {
+  color: var(--accent-2);
+  border-color: rgba(54, 179, 126, 0.5);
+}
