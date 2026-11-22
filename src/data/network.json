@@ -1,0 +1,5522 @@
+{
+  "schema": "flare-network/1",
+  "meta": {
+    "name": "炼化火炬管网 · 1#/2# 火炬系统",
+    "site": "某炼化一体化项目",
+    "version": 1,
+    "units": {
+      "flow": "m³/h",
+      "velocity": "m/s",
+      "length": "m",
+      "dn": "mm"
+    },
+    "note": "流量分配采用支路阻力等压降模型，迭代收敛后得到各管段流量。"
+  },
+  "nodes": [
+    {
+      "id": "N001",
+      "key": "H1@-104",
+      "name": "H1 集合管节点 -104m",
+      "kind": "header",
+      "pos": [
+        -104,
+        6,
+        -22
+      ]
+    },
+    {
+      "id": "N002",
+      "key": "H1@-92",
+      "name": "H1 集合管节点 -92m",
+      "kind": "header",
+      "pos": [
+        -92,
+        6,
+        -22
+      ]
+    },
+    {
+      "id": "N003",
+      "key": "H1@-80",
+      "name": "H1 集合管节点 -80m",
+      "kind": "header",
+      "pos": [
+        -80,
+        6,
+        -22
+      ]
+    },
+    {
+      "id": "N004",
+      "key": "H1@-68",
+      "name": "H1 集合管节点 -68m",
+      "kind": "header",
+      "pos": [
+        -68,
+        6,
+        -22
+      ]
+    },
+    {
+      "id": "N005",
+      "key": "H1@-56",
+      "name": "H1 集合管节点 -56m",
+      "kind": "header",
+      "pos": [
+        -56,
+        6,
+        -22
+      ]
+    },
+    {
+      "id": "N006",
+      "key": "H1@-44",
+      "name": "H1 集合管节点 -44m",
+      "kind": "header",
+      "pos": [
+        -44,
+        6,
+        -22
+      ]
+    },
+    {
+      "id": "N007",
+      "key": "H1@-32",
+      "name": "H1 集合管节点 -32m",
+      "kind": "header",
+      "pos": [
+        -32,
+        6,
+        -22
+      ]
+    },
+    {
+      "id": "N008",
+      "key": "H1@-20",
+      "name": "H1 集合管节点 -20m",
+      "kind": "header",
+      "pos": [
+        -20,
+        6,
+        -22
+      ]
+    },
+    {
+      "id": "N009",
+      "key": "H1@-8",
+      "name": "H1 集合管节点 -8m",
+      "kind": "header",
+      "pos": [
+        -8,
+        6,
+        -22
+      ]
+    },
+    {
+      "id": "N010",
+      "key": "H1@4",
+      "name": "H1 集合管节点 4m",
+      "kind": "header",
+      "pos": [
+        4,
+        6,
+        -22
+      ]
+    },
+    {
+      "id": "N011",
+      "key": "H1@16",
+      "name": "H1 集合管节点 16m",
+      "kind": "header",
+      "pos": [
+        16,
+        6,
+        -22
+      ]
+    },
+    {
+      "id": "N012",
+      "key": "H1@28",
+      "name": "H1 集合管节点 28m",
+      "kind": "header",
+      "pos": [
+        28,
+        6,
+        -22
+      ]
+    },
+    {
+      "id": "N013",
+      "key": "H1@40",
+      "name": "H1 集合管节点 40m",
+      "kind": "header",
+      "pos": [
+        40,
+        6,
+        -22
+      ]
+    },
+    {
+      "id": "N014",
+      "key": "H1@52",
+      "name": "H1 集合管节点 52m",
+      "kind": "header",
+      "pos": [
+        52,
+        6,
+        -22
+      ]
+    },
+    {
+      "id": "N015",
+      "key": "H1@64",
+      "name": "H1 集合管节点 64m",
+      "kind": "header",
+      "pos": [
+        64,
+        6,
+        -22
+      ]
+    },
+    {
+      "id": "N016",
+      "key": "H1@70",
+      "name": "H1 集合管节点 70m",
+      "kind": "header",
+      "pos": [
+        70,
+        6,
+        -22
+      ]
+    },
+    {
+      "id": "N017",
+      "key": "H2@-104",
+      "name": "H2 集合管节点 -104m",
+      "kind": "header",
+      "pos": [
+        -104,
+        6,
+        22
+      ]
+    },
+    {
+      "id": "N018",
+      "key": "H2@-92",
+      "name": "H2 集合管节点 -92m",
+      "kind": "header",
+      "pos": [
+        -92,
+        6,
+        22
+      ]
+    },
+    {
+      "id": "N019",
+      "key": "H2@-80",
+      "name": "H2 集合管节点 -80m",
+      "kind": "header",
+      "pos": [
+        -80,
+        6,
+        22
+      ]
+    },
+    {
+      "id": "N020",
+      "key": "H2@-68",
+      "name": "H2 集合管节点 -68m",
+      "kind": "header",
+      "pos": [
+        -68,
+        6,
+        22
+      ]
+    },
+    {
+      "id": "N021",
+      "key": "H2@-56",
+      "name": "H2 集合管节点 -56m",
+      "kind": "header",
+      "pos": [
+        -56,
+        6,
+        22
+      ]
+    },
+    {
+      "id": "N022",
+      "key": "H2@-44",
+      "name": "H2 集合管节点 -44m",
+      "kind": "header",
+      "pos": [
+        -44,
+        6,
+        22
+      ]
+    },
+    {
+      "id": "N023",
+      "key": "H2@-32",
+      "name": "H2 集合管节点 -32m",
+      "kind": "header",
+      "pos": [
+        -32,
+        6,
+        22
+      ]
+    },
+    {
+      "id": "N024",
+      "key": "H2@-20",
+      "name": "H2 集合管节点 -20m",
+      "kind": "header",
+      "pos": [
+        -20,
+        6,
+        22
+      ]
+    },
+    {
+      "id": "N025",
+      "key": "H2@-8",
+      "name": "H2 集合管节点 -8m",
+      "kind": "header",
+      "pos": [
+        -8,
+        6,
+        22
+      ]
+    },
+    {
+      "id": "N026",
+      "key": "H2@4",
+      "name": "H2 集合管节点 4m",
+      "kind": "header",
+      "pos": [
+        4,
+        6,
+        22
+      ]
+    },
+    {
+      "id": "N027",
+      "key": "H2@16",
+      "name": "H2 集合管节点 16m",
+      "kind": "header",
+      "pos": [
+        16,
+        6,
+        22
+      ]
+    },
+    {
+      "id": "N028",
+      "key": "H2@28",
+      "name": "H2 集合管节点 28m",
+      "kind": "header",
+      "pos": [
+        28,
+        6,
+        22
+      ]
+    },
+    {
+      "id": "N029",
+      "key": "H2@40",
+      "name": "H2 集合管节点 40m",
+      "kind": "header",
+      "pos": [
+        40,
+        6,
+        22
+      ]
+    },
+    {
+      "id": "N030",
+      "key": "H2@52",
+      "name": "H2 集合管节点 52m",
+      "kind": "header",
+      "pos": [
+        52,
+        6,
+        22
+      ]
+    },
+    {
+      "id": "N031",
+      "key": "H2@64",
+      "name": "H2 集合管节点 64m",
+      "kind": "header",
+      "pos": [
+        64,
+        6,
+        22
+      ]
+    },
+    {
+      "id": "N032",
+      "key": "H2@70",
+      "name": "H2 集合管节点 70m",
+      "kind": "header",
+      "pos": [
+        70,
+        6,
+        22
+      ]
+    },
+    {
+      "id": "N033",
+      "key": "S.S1.SUB1",
+      "name": "常减压装置 · 低压泄放",
+      "kind": "subsource",
+      "pos": [
+        -100,
+        3,
+        -84
+      ]
+    },
+    {
+      "id": "N034",
+      "key": "S.S1.SUB2",
+      "name": "常减压装置 · 高压泄放",
+      "kind": "subsource",
+      "pos": [
+        -84,
+        3,
+        -84
+      ]
+    },
+    {
+      "id": "N035",
+      "key": "S.S1.MAN",
+      "name": "常减压装置 集气总管",
+      "kind": "source",
+      "pos": [
+        -92,
+        3,
+        -78
+      ],
+      "sourceId": "S1"
+    },
+    {
+      "id": "N036",
+      "key": "S.S1.RISER",
+      "name": "常减压装置 立管顶",
+      "kind": "elbow",
+      "pos": [
+        -92,
+        6,
+        -78
+      ]
+    },
+    {
+      "id": "N037",
+      "key": "S.S1.SPLIT",
+      "name": "常减压装置 支路三通",
+      "kind": "split",
+      "pos": [
+        -92,
+        6,
+        -70
+      ]
+    },
+    {
+      "id": "N038",
+      "key": "S.S1.A1",
+      "name": "常减压装置 支路A转角",
+      "kind": "elbow",
+      "pos": [
+        -97,
+        6,
+        -58
+      ]
+    },
+    {
+      "id": "N039",
+      "key": "S.S1.B1",
+      "name": "常减压装置 支路B转角",
+      "kind": "elbow",
+      "pos": [
+        -87,
+        6,
+        -58
+      ]
+    },
+    {
+      "id": "N040",
+      "key": "S.S1.MERGE",
+      "name": "常减压装置 支路汇合",
+      "kind": "merge",
+      "pos": [
+        -92,
+        6,
+        -40
+      ]
+    },
+    {
+      "id": "N041",
+      "key": "S.S1.WSIN",
+      "name": "常减压装置 水封罐入口",
+      "kind": "waterseal",
+      "pos": [
+        -92,
+        6,
+        -36
+      ]
+    },
+    {
+      "id": "N042",
+      "key": "S.S1.WSOUT",
+      "name": "常减压装置 水封罐出口",
+      "kind": "waterseal",
+      "pos": [
+        -92,
+        6,
+        -32
+      ]
+    },
+    {
+      "id": "N043",
+      "key": "S.S2.SUB1",
+      "name": "催化裂化装置 · 低压泄放",
+      "kind": "subsource",
+      "pos": [
+        -76,
+        3,
+        -84
+      ]
+    },
+    {
+      "id": "N044",
+      "key": "S.S2.SUB2",
+      "name": "催化裂化装置 · 高压泄放",
+      "kind": "subsource",
+      "pos": [
+        -60,
+        3,
+        -84
+      ]
+    },
+    {
+      "id": "N045",
+      "key": "S.S2.MAN",
+      "name": "催化裂化装置 集气总管",
+      "kind": "source",
+      "pos": [
+        -68,
+        3,
+        -78
+      ],
+      "sourceId": "S2"
+    },
+    {
+      "id": "N046",
+      "key": "S.S2.RISER",
+      "name": "催化裂化装置 立管顶",
+      "kind": "elbow",
+      "pos": [
+        -68,
+        6,
+        -78
+      ]
+    },
+    {
+      "id": "N047",
+      "key": "S.S2.SPLIT",
+      "name": "催化裂化装置 支路三通",
+      "kind": "split",
+      "pos": [
+        -68,
+        6,
+        -70
+      ]
+    },
+    {
+      "id": "N048",
+      "key": "S.S2.A1",
+      "name": "催化裂化装置 支路A转角",
+      "kind": "elbow",
+      "pos": [
+        -73,
+        6,
+        -58
+      ]
+    },
+    {
+      "id": "N049",
+      "key": "S.S2.B1",
+      "name": "催化裂化装置 支路B转角",
+      "kind": "elbow",
+      "pos": [
+        -63,
+        6,
+        -58
+      ]
+    },
+    {
+      "id": "N050",
+      "key": "S.S2.MERGE",
+      "name": "催化裂化装置 支路汇合",
+      "kind": "merge",
+      "pos": [
+        -68,
+        6,
+        -40
+      ]
+    },
+    {
+      "id": "N051",
+      "key": "S.S2.WSIN",
+      "name": "催化裂化装置 水封罐入口",
+      "kind": "waterseal",
+      "pos": [
+        -68,
+        6,
+        -36
+      ]
+    },
+    {
+      "id": "N052",
+      "key": "S.S2.WSOUT",
+      "name": "催化裂化装置 水封罐出口",
+      "kind": "waterseal",
+      "pos": [
+        -68,
+        6,
+        -32
+      ]
+    },
+    {
+      "id": "N053",
+      "key": "S.S3.SUB1",
+      "name": "加氢裂化装置 · 低压泄放",
+      "kind": "subsource",
+      "pos": [
+        -52,
+        3,
+        -84
+      ]
+    },
+    {
+      "id": "N054",
+      "key": "S.S3.SUB2",
+      "name": "加氢裂化装置 · 高压泄放",
+      "kind": "subsource",
+      "pos": [
+        -36,
+        3,
+        -84
+      ]
+    },
+    {
+      "id": "N055",
+      "key": "S.S3.MAN",
+      "name": "加氢裂化装置 集气总管",
+      "kind": "source",
+      "pos": [
+        -44,
+        3,
+        -78
+      ],
+      "sourceId": "S3"
+    },
+    {
+      "id": "N056",
+      "key": "S.S3.RISER",
+      "name": "加氢裂化装置 立管顶",
+      "kind": "elbow",
+      "pos": [
+        -44,
+        6,
+        -78
+      ]
+    },
+    {
+      "id": "N057",
+      "key": "S.S3.SPLIT",
+      "name": "加氢裂化装置 支路三通",
+      "kind": "split",
+      "pos": [
+        -44,
+        6,
+        -70
+      ]
+    },
+    {
+      "id": "N058",
+      "key": "S.S3.A1",
+      "name": "加氢裂化装置 支路A转角",
+      "kind": "elbow",
+      "pos": [
+        -49,
+        6,
+        -58
+      ]
+    },
+    {
+      "id": "N059",
+      "key": "S.S3.B1",
+      "name": "加氢裂化装置 支路B转角",
+      "kind": "elbow",
+      "pos": [
+        -39,
+        6,
+        -58
+      ]
+    },
+    {
+      "id": "N060",
+      "key": "S.S3.MERGE",
+      "name": "加氢裂化装置 支路汇合",
+      "kind": "merge",
+      "pos": [
+        -44,
+        6,
+        -40
+      ]
+    },
+    {
+      "id": "N061",
+      "key": "S.S3.WSIN",
+      "name": "加氢裂化装置 水封罐入口",
+      "kind": "waterseal",
+      "pos": [
+        -44,
+        6,
+        -36
+      ]
+    },
+    {
+      "id": "N062",
+      "key": "S.S3.WSOUT",
+      "name": "加氢裂化装置 水封罐出口",
+      "kind": "waterseal",
+      "pos": [
+        -44,
+        6,
+        -32
+      ]
+    },
+    {
+      "id": "N063",
+      "key": "S.S4.SUB1",
+      "name": "延迟焦化装置 · 低压泄放",
+      "kind": "subsource",
+      "pos": [
+        -28,
+        3,
+        -84
+      ]
+    },
+    {
+      "id": "N064",
+      "key": "S.S4.SUB2",
+      "name": "延迟焦化装置 · 高压泄放",
+      "kind": "subsource",
+      "pos": [
+        -12,
+        3,
+        -84
+      ]
+    },
+    {
+      "id": "N065",
+      "key": "S.S4.MAN",
+      "name": "延迟焦化装置 集气总管",
+      "kind": "source",
+      "pos": [
+        -20,
+        3,
+        -78
+      ],
+      "sourceId": "S4"
+    },
+    {
+      "id": "N066",
+      "key": "S.S4.RISER",
+      "name": "延迟焦化装置 立管顶",
+      "kind": "elbow",
+      "pos": [
+        -20,
+        6,
+        -78
+      ]
+    },
+    {
+      "id": "N067",
+      "key": "S.S4.SPLIT",
+      "name": "延迟焦化装置 支路三通",
+      "kind": "split",
+      "pos": [
+        -20,
+        6,
+        -70
+      ]
+    },
+    {
+      "id": "N068",
+      "key": "S.S4.A1",
+      "name": "延迟焦化装置 支路A转角",
+      "kind": "elbow",
+      "pos": [
+        -25,
+        6,
+        -58
+      ]
+    },
+    {
+      "id": "N069",
+      "key": "S.S4.B1",
+      "name": "延迟焦化装置 支路B转角",
+      "kind": "elbow",
+      "pos": [
+        -15,
+        6,
+        -58
+      ]
+    },
+    {
+      "id": "N070",
+      "key": "S.S4.MERGE",
+      "name": "延迟焦化装置 支路汇合",
+      "kind": "merge",
+      "pos": [
+        -20,
+        6,
+        -40
+      ]
+    },
+    {
+      "id": "N071",
+      "key": "S.S4.WSIN",
+      "name": "延迟焦化装置 水封罐入口",
+      "kind": "waterseal",
+      "pos": [
+        -20,
+        6,
+        -36
+      ]
+    },
+    {
+      "id": "N072",
+      "key": "S.S4.WSOUT",
+      "name": "延迟焦化装置 水封罐出口",
+      "kind": "waterseal",
+      "pos": [
+        -20,
+        6,
+        -32
+      ]
+    },
+    {
+      "id": "N073",
+      "key": "S.S5.SUB1",
+      "name": "连续重整装置 · 低压泄放",
+      "kind": "subsource",
+      "pos": [
+        -4,
+        3,
+        -84
+      ]
+    },
+    {
+      "id": "N074",
+      "key": "S.S5.SUB2",
+      "name": "连续重整装置 · 高压泄放",
+      "kind": "subsource",
+      "pos": [
+        12,
+        3,
+        -84
+      ]
+    },
+    {
+      "id": "N075",
+      "key": "S.S5.MAN",
+      "name": "连续重整装置 集气总管",
+      "kind": "source",
+      "pos": [
+        4,
+        3,
+        -78
+      ],
+      "sourceId": "S5"
+    },
+    {
+      "id": "N076",
+      "key": "S.S5.RISER",
+      "name": "连续重整装置 立管顶",
+      "kind": "elbow",
+      "pos": [
+        4,
+        6,
+        -78
+      ]
+    },
+    {
+      "id": "N077",
+      "key": "S.S5.SPLIT",
+      "name": "连续重整装置 支路三通",
+      "kind": "split",
+      "pos": [
+        4,
+        6,
+        -70
+      ]
+    },
+    {
+      "id": "N078",
+      "key": "S.S5.A1",
+      "name": "连续重整装置 支路A转角",
+      "kind": "elbow",
+      "pos": [
+        -1,
+        6,
+        -58
+      ]
+    },
+    {
+      "id": "N079",
+      "key": "S.S5.B1",
+      "name": "连续重整装置 支路B转角",
+      "kind": "elbow",
+      "pos": [
+        9,
+        6,
+        -58
+      ]
+    },
+    {
+      "id": "N080",
+      "key": "S.S5.MERGE",
+      "name": "连续重整装置 支路汇合",
+      "kind": "merge",
+      "pos": [
+        4,
+        6,
+        -40
+      ]
+    },
+    {
+      "id": "N081",
+      "key": "S.S5.WSIN",
+      "name": "连续重整装置 水封罐入口",
+      "kind": "waterseal",
+      "pos": [
+        4,
+        6,
+        -36
+      ]
+    },
+    {
+      "id": "N082",
+      "key": "S.S5.WSOUT",
+      "name": "连续重整装置 水封罐出口",
+      "kind": "waterseal",
+      "pos": [
+        4,
+        6,
+        -32
+      ]
+    },
+    {
+      "id": "N083",
+      "key": "S.S6.SUB1",
+      "name": "罐区 · 低压泄放",
+      "kind": "subsource",
+      "pos": [
+        20,
+        3,
+        -84
+      ]
+    },
+    {
+      "id": "N084",
+      "key": "S.S6.SUB2",
+      "name": "罐区 · 高压泄放",
+      "kind": "subsource",
+      "pos": [
+        36,
+        3,
+        -84
+      ]
+    },
+    {
+      "id": "N085",
+      "key": "S.S6.MAN",
+      "name": "罐区 集气总管",
+      "kind": "source",
+      "pos": [
+        28,
+        3,
+        -78
+      ],
+      "sourceId": "S6"
+    },
+    {
+      "id": "N086",
+      "key": "S.S6.RISER",
+      "name": "罐区 立管顶",
+      "kind": "elbow",
+      "pos": [
+        28,
+        6,
+        -78
+      ]
+    },
+    {
+      "id": "N087",
+      "key": "S.S6.SPLIT",
+      "name": "罐区 支路三通",
+      "kind": "split",
+      "pos": [
+        28,
+        6,
+        -70
+      ]
+    },
+    {
+      "id": "N088",
+      "key": "S.S6.A1",
+      "name": "罐区 支路A转角",
+      "kind": "elbow",
+      "pos": [
+        23,
+        6,
+        -58
+      ]
+    },
+    {
+      "id": "N089",
+      "key": "S.S6.B1",
+      "name": "罐区 支路B转角",
+      "kind": "elbow",
+      "pos": [
+        33,
+        6,
+        -58
+      ]
+    },
+    {
+      "id": "N090",
+      "key": "S.S6.MERGE",
+      "name": "罐区 支路汇合",
+      "kind": "merge",
+      "pos": [
+        28,
+        6,
+        -40
+      ]
+    },
+    {
+      "id": "N091",
+      "key": "S.S6.WSIN",
+      "name": "罐区 水封罐入口",
+      "kind": "waterseal",
+      "pos": [
+        28,
+        6,
+        -36
+      ]
+    },
+    {
+      "id": "N092",
+      "key": "S.S6.WSOUT",
+      "name": "罐区 水封罐出口",
+      "kind": "waterseal",
+      "pos": [
+        28,
+        6,
+        -32
+      ]
+    },
+    {
+      "id": "N093",
+      "key": "S.S7.SUB1",
+      "name": "乙烯裂解装置 · 低压泄放",
+      "kind": "subsource",
+      "pos": [
+        -88,
+        3,
+        84
+      ]
+    },
+    {
+      "id": "N094",
+      "key": "S.S7.SUB2",
+      "name": "乙烯裂解装置 · 高压泄放",
+      "kind": "subsource",
+      "pos": [
+        -72,
+        3,
+        84
+      ]
+    },
+    {
+      "id": "N095",
+      "key": "S.S7.MAN",
+      "name": "乙烯裂解装置 集气总管",
+      "kind": "source",
+      "pos": [
+        -80,
+        3,
+        78
+      ],
+      "sourceId": "S7"
+    },
+    {
+      "id": "N096",
+      "key": "S.S7.RISER",
+      "name": "乙烯裂解装置 立管顶",
+      "kind": "elbow",
+      "pos": [
+        -80,
+        6,
+        78
+      ]
+    },
+    {
+      "id": "N097",
+      "key": "S.S7.SPLIT",
+      "name": "乙烯裂解装置 支路三通",
+      "kind": "split",
+      "pos": [
+        -80,
+        6,
+        70
+      ]
+    },
+    {
+      "id": "N098",
+      "key": "S.S7.A1",
+      "name": "乙烯裂解装置 支路A转角",
+      "kind": "elbow",
+      "pos": [
+        -85,
+        6,
+        58
+      ]
+    },
+    {
+      "id": "N099",
+      "key": "S.S7.B1",
+      "name": "乙烯裂解装置 支路B转角",
+      "kind": "elbow",
+      "pos": [
+        -75,
+        6,
+        58
+      ]
+    },
+    {
+      "id": "N100",
+      "key": "S.S7.MERGE",
+      "name": "乙烯裂解装置 支路汇合",
+      "kind": "merge",
+      "pos": [
+        -80,
+        6,
+        40
+      ]
+    },
+    {
+      "id": "N101",
+      "key": "S.S7.WSIN",
+      "name": "乙烯裂解装置 水封罐入口",
+      "kind": "waterseal",
+      "pos": [
+        -80,
+        6,
+        36
+      ]
+    },
+    {
+      "id": "N102",
+      "key": "S.S7.WSOUT",
+      "name": "乙烯裂解装置 水封罐出口",
+      "kind": "waterseal",
+      "pos": [
+        -80,
+        6,
+        32
+      ]
+    },
+    {
+      "id": "N103",
+      "key": "S.S8.SUB1",
+      "name": "硫磺回收装置 · 低压泄放",
+      "kind": "subsource",
+      "pos": [
+        -64,
+        3,
+        84
+      ]
+    },
+    {
+      "id": "N104",
+      "key": "S.S8.SUB2",
+      "name": "硫磺回收装置 · 高压泄放",
+      "kind": "subsource",
+      "pos": [
+        -48,
+        3,
+        84
+      ]
+    },
+    {
+      "id": "N105",
+      "key": "S.S8.MAN",
+      "name": "硫磺回收装置 集气总管",
+      "kind": "source",
+      "pos": [
+        -56,
+        3,
+        78
+      ],
+      "sourceId": "S8"
+    },
+    {
+      "id": "N106",
+      "key": "S.S8.RISER",
+      "name": "硫磺回收装置 立管顶",
+      "kind": "elbow",
+      "pos": [
+        -56,
+        6,
+        78
+      ]
+    },
+    {
+      "id": "N107",
+      "key": "S.S8.SPLIT",
+      "name": "硫磺回收装置 支路三通",
+      "kind": "split",
+      "pos": [
+        -56,
+        6,
+        70
+      ]
+    },
+    {
+      "id": "N108",
+      "key": "S.S8.A1",
+      "name": "硫磺回收装置 支路A转角",
+      "kind": "elbow",
+      "pos": [
+        -61,
+        6,
+        58
+      ]
+    },
+    {
+      "id": "N109",
+      "key": "S.S8.B1",
+      "name": "硫磺回收装置 支路B转角",
+      "kind": "elbow",
+      "pos": [
+        -51,
+        6,
+        58
+      ]
+    },
+    {
+      "id": "N110",
+      "key": "S.S8.MERGE",
+      "name": "硫磺回收装置 支路汇合",
+      "kind": "merge",
+      "pos": [
+        -56,
+        6,
+        40
+      ]
+    },
+    {
+      "id": "N111",
+      "key": "S.S8.WSIN",
+      "name": "硫磺回收装置 水封罐入口",
+      "kind": "waterseal",
+      "pos": [
+        -56,
+        6,
+        36
+      ]
+    },
+    {
+      "id": "N112",
+      "key": "S.S8.WSOUT",
+      "name": "硫磺回收装置 水封罐出口",
+      "kind": "waterseal",
+      "pos": [
+        -56,
+        6,
+        32
+      ]
+    },
+    {
+      "id": "N113",
+      "key": "S.S9.SUB1",
+      "name": "芳烃联合装置 · 低压泄放",
+      "kind": "subsource",
+      "pos": [
+        -40,
+        3,
+        84
+      ]
+    },
+    {
+      "id": "N114",
+      "key": "S.S9.SUB2",
+      "name": "芳烃联合装置 · 高压泄放",
+      "kind": "subsource",
+      "pos": [
+        -24,
+        3,
+        84
+      ]
+    },
+    {
+      "id": "N115",
+      "key": "S.S9.MAN",
+      "name": "芳烃联合装置 集气总管",
+      "kind": "source",
+      "pos": [
+        -32,
+        3,
+        78
+      ],
+      "sourceId": "S9"
+    },
+    {
+      "id": "N116",
+      "key": "S.S9.RISER",
+      "name": "芳烃联合装置 立管顶",
+      "kind": "elbow",
+      "pos": [
+        -32,
+        6,
+        78
+      ]
+    },
+    {
+      "id": "N117",
+      "key": "S.S9.SPLIT",
+      "name": "芳烃联合装置 支路三通",
+      "kind": "split",
+      "pos": [
+        -32,
+        6,
+        70
+      ]
+    },
+    {
+      "id": "N118",
+      "key": "S.S9.A1",
+      "name": "芳烃联合装置 支路A转角",
+      "kind": "elbow",
+      "pos": [
+        -37,
+        6,
+        58
+      ]
+    },
+    {
+      "id": "N119",
+      "key": "S.S9.B1",
+      "name": "芳烃联合装置 支路B转角",
+      "kind": "elbow",
+      "pos": [
+        -27,
+        6,
+        58
+      ]
+    },
+    {
+      "id": "N120",
+      "key": "S.S9.MERGE",
+      "name": "芳烃联合装置 支路汇合",
+      "kind": "merge",
+      "pos": [
+        -32,
+        6,
+        40
+      ]
+    },
+    {
+      "id": "N121",
+      "key": "S.S9.WSIN",
+      "name": "芳烃联合装置 水封罐入口",
+      "kind": "waterseal",
+      "pos": [
+        -32,
+        6,
+        36
+      ]
+    },
+    {
+      "id": "N122",
+      "key": "S.S9.WSOUT",
+      "name": "芳烃联合装置 水封罐出口",
+      "kind": "waterseal",
+      "pos": [
+        -32,
+        6,
+        32
+      ]
+    },
+    {
+      "id": "N123",
+      "key": "S.S10.SUB1",
+      "name": "气体分馏装置 · 低压泄放",
+      "kind": "subsource",
+      "pos": [
+        -16,
+        3,
+        84
+      ]
+    },
+    {
+      "id": "N124",
+      "key": "S.S10.SUB2",
+      "name": "气体分馏装置 · 高压泄放",
+      "kind": "subsource",
+      "pos": [
+        0,
+        3,
+        84
+      ]
+    },
+    {
+      "id": "N125",
+      "key": "S.S10.MAN",
+      "name": "气体分馏装置 集气总管",
+      "kind": "source",
+      "pos": [
+        -8,
+        3,
+        78
+      ],
+      "sourceId": "S10"
+    },
+    {
+      "id": "N126",
+      "key": "S.S10.RISER",
+      "name": "气体分馏装置 立管顶",
+      "kind": "elbow",
+      "pos": [
+        -8,
+        6,
+        78
+      ]
+    },
+    {
+      "id": "N127",
+      "key": "S.S10.SPLIT",
+      "name": "气体分馏装置 支路三通",
+      "kind": "split",
+      "pos": [
+        -8,
+        6,
+        70
+      ]
+    },
+    {
+      "id": "N128",
+      "key": "S.S10.A1",
+      "name": "气体分馏装置 支路A转角",
+      "kind": "elbow",
+      "pos": [
+        -13,
+        6,
+        58
+      ]
+    },
+    {
+      "id": "N129",
+      "key": "S.S10.B1",
+      "name": "气体分馏装置 支路B转角",
+      "kind": "elbow",
+      "pos": [
+        -3,
+        6,
+        58
+      ]
+    },
+    {
+      "id": "N130",
+      "key": "S.S10.MERGE",
+      "name": "气体分馏装置 支路汇合",
+      "kind": "merge",
+      "pos": [
+        -8,
+        6,
+        40
+      ]
+    },
+    {
+      "id": "N131",
+      "key": "S.S10.WSIN",
+      "name": "气体分馏装置 水封罐入口",
+      "kind": "waterseal",
+      "pos": [
+        -8,
+        6,
+        36
+      ]
+    },
+    {
+      "id": "N132",
+      "key": "S.S10.WSOUT",
+      "name": "气体分馏装置 水封罐出口",
+      "kind": "waterseal",
+      "pos": [
+        -8,
+        6,
+        32
+      ]
+    },
+    {
+      "id": "N133",
+      "key": "S.S11.SUB1",
+      "name": "污水处理场 · 低压泄放",
+      "kind": "subsource",
+      "pos": [
+        8,
+        3,
+        84
+      ]
+    },
+    {
+      "id": "N134",
+      "key": "S.S11.SUB2",
+      "name": "污水处理场 · 高压泄放",
+      "kind": "subsource",
+      "pos": [
+        24,
+        3,
+        84
+      ]
+    },
+    {
+      "id": "N135",
+      "key": "S.S11.MAN",
+      "name": "污水处理场 集气总管",
+      "kind": "source",
+      "pos": [
+        16,
+        3,
+        78
+      ],
+      "sourceId": "S11"
+    },
+    {
+      "id": "N136",
+      "key": "S.S11.RISER",
+      "name": "污水处理场 立管顶",
+      "kind": "elbow",
+      "pos": [
+        16,
+        6,
+        78
+      ]
+    },
+    {
+      "id": "N137",
+      "key": "S.S11.SPLIT",
+      "name": "污水处理场 支路三通",
+      "kind": "split",
+      "pos": [
+        16,
+        6,
+        70
+      ]
+    },
+    {
+      "id": "N138",
+      "key": "S.S11.A1",
+      "name": "污水处理场 支路A转角",
+      "kind": "elbow",
+      "pos": [
+        11,
+        6,
+        58
+      ]
+    },
+    {
+      "id": "N139",
+      "key": "S.S11.B1",
+      "name": "污水处理场 支路B转角",
+      "kind": "elbow",
+      "pos": [
+        21,
+        6,
+        58
+      ]
+    },
+    {
+      "id": "N140",
+      "key": "S.S11.MERGE",
+      "name": "污水处理场 支路汇合",
+      "kind": "merge",
+      "pos": [
+        16,
+        6,
+        40
+      ]
+    },
+    {
+      "id": "N141",
+      "key": "S.S11.WSIN",
+      "name": "污水处理场 水封罐入口",
+      "kind": "waterseal",
+      "pos": [
+        16,
+        6,
+        36
+      ]
+    },
+    {
+      "id": "N142",
+      "key": "S.S11.WSOUT",
+      "name": "污水处理场 水封罐出口",
+      "kind": "waterseal",
+      "pos": [
+        16,
+        6,
+        32
+      ]
+    },
+    {
+      "id": "N143",
+      "key": "S.S12.SUB1",
+      "name": "火炬气回收单元 · 低压泄放",
+      "kind": "subsource",
+      "pos": [
+        32,
+        3,
+        84
+      ]
+    },
+    {
+      "id": "N144",
+      "key": "S.S12.SUB2",
+      "name": "火炬气回收单元 · 高压泄放",
+      "kind": "subsource",
+      "pos": [
+        48,
+        3,
+        84
+      ]
+    },
+    {
+      "id": "N145",
+      "key": "S.S12.MAN",
+      "name": "火炬气回收单元 集气总管",
+      "kind": "source",
+      "pos": [
+        40,
+        3,
+        78
+      ],
+      "sourceId": "S12"
+    },
+    {
+      "id": "N146",
+      "key": "S.S12.RISER",
+      "name": "火炬气回收单元 立管顶",
+      "kind": "elbow",
+      "pos": [
+        40,
+        6,
+        78
+      ]
+    },
+    {
+      "id": "N147",
+      "key": "S.S12.SPLIT",
+      "name": "火炬气回收单元 支路三通",
+      "kind": "split",
+      "pos": [
+        40,
+        6,
+        70
+      ]
+    },
+    {
+      "id": "N148",
+      "key": "S.S12.A1",
+      "name": "火炬气回收单元 支路A转角",
+      "kind": "elbow",
+      "pos": [
+        35,
+        6,
+        58
+      ]
+    },
+    {
+      "id": "N149",
+      "key": "S.S12.B1",
+      "name": "火炬气回收单元 支路B转角",
+      "kind": "elbow",
+      "pos": [
+        45,
+        6,
+        58
+      ]
+    },
+    {
+      "id": "N150",
+      "key": "S.S12.MERGE",
+      "name": "火炬气回收单元 支路汇合",
+      "kind": "merge",
+      "pos": [
+        40,
+        6,
+        40
+      ]
+    },
+    {
+      "id": "N151",
+      "key": "S.S12.WSIN",
+      "name": "火炬气回收单元 水封罐入口",
+      "kind": "waterseal",
+      "pos": [
+        40,
+        6,
+        36
+      ]
+    },
+    {
+      "id": "N152",
+      "key": "S.S12.WSOUT",
+      "name": "火炬气回收单元 水封罐出口",
+      "kind": "waterseal",
+      "pos": [
+        40,
+        6,
+        32
+      ]
+    },
+    {
+      "id": "N153",
+      "key": "T1",
+      "name": "1#/2# 总管分流三通",
+      "kind": "split",
+      "pos": [
+        70,
+        6,
+        -22
+      ]
+    },
+    {
+      "id": "N154",
+      "key": "T2",
+      "name": "2# 总管末端三通",
+      "kind": "split",
+      "pos": [
+        70,
+        6,
+        22
+      ]
+    },
+    {
+      "id": "N155",
+      "key": "KO1.IN",
+      "name": "1# 分液罐入口",
+      "kind": "header",
+      "pos": [
+        94,
+        6,
+        -6
+      ]
+    },
+    {
+      "id": "N156",
+      "key": "KO1.OUT",
+      "name": "1# 分液罐出口",
+      "kind": "header",
+      "pos": [
+        106,
+        6,
+        -6
+      ]
+    },
+    {
+      "id": "N157",
+      "key": "KO2.IN",
+      "name": "2# 分液罐入口",
+      "kind": "header",
+      "pos": [
+        94,
+        6,
+        26
+      ]
+    },
+    {
+      "id": "N158",
+      "key": "KO2.OUT",
+      "name": "2# 分液罐出口",
+      "kind": "header",
+      "pos": [
+        106,
+        6,
+        26
+      ]
+    },
+    {
+      "id": "N159",
+      "key": "M1",
+      "name": "总管汇合点",
+      "kind": "merge",
+      "pos": [
+        114,
+        6,
+        4
+      ]
+    },
+    {
+      "id": "N160",
+      "key": "WSM.IN",
+      "name": "主水封罐入口",
+      "kind": "waterseal",
+      "pos": [
+        114,
+        6,
+        4
+      ]
+    },
+    {
+      "id": "N161",
+      "key": "WSM.OUT",
+      "name": "主水封罐出口",
+      "kind": "waterseal",
+      "pos": [
+        122,
+        6,
+        4
+      ]
+    },
+    {
+      "id": "N162",
+      "key": "T3",
+      "name": "火炬立管分流三通",
+      "kind": "split",
+      "pos": [
+        130,
+        6,
+        4
+      ]
+    },
+    {
+      "id": "N163",
+      "key": "F1.BASE",
+      "name": "1# 火炬立管底部",
+      "kind": "flarebase",
+      "pos": [
+        150,
+        6,
+        -20
+      ]
+    },
+    {
+      "id": "N164",
+      "key": "F2.BASE",
+      "name": "2# 火炬立管底部",
+      "kind": "flarebase",
+      "pos": [
+        150,
+        6,
+        40
+      ]
+    },
+    {
+      "id": "N165",
+      "key": "KO1#1",
+      "name": "1# 火炬总管东段 转角1",
+      "kind": "elbow",
+      "pos": [
+        78,
+        6,
+        -22
+      ]
+    },
+    {
+      "id": "N166",
+      "key": "KO1#2",
+      "name": "1# 火炬总管东段 转角2",
+      "kind": "elbow",
+      "pos": [
+        84,
+        6,
+        -19
+      ]
+    },
+    {
+      "id": "N167",
+      "key": "KO1#3",
+      "name": "1# 火炬总管东段 转角3",
+      "kind": "elbow",
+      "pos": [
+        90,
+        6,
+        -12
+      ]
+    },
+    {
+      "id": "N168",
+      "key": "XO#1",
+      "name": "1#→2# 跨线 转角1",
+      "kind": "elbow",
+      "pos": [
+        78,
+        6,
+        8
+      ]
+    },
+    {
+      "id": "N169",
+      "key": "XO#2",
+      "name": "1#→2# 跨线 转角2",
+      "kind": "elbow",
+      "pos": [
+        86,
+        6,
+        18
+      ]
+    },
+    {
+      "id": "N170",
+      "key": "H2E#1",
+      "name": "2# 总管东段 转角1",
+      "kind": "elbow",
+      "pos": [
+        82,
+        6,
+        22
+      ]
+    },
+    {
+      "id": "N171",
+      "key": "H2E#2",
+      "name": "2# 总管东段 转角2",
+      "kind": "elbow",
+      "pos": [
+        88,
+        6,
+        24
+      ]
+    },
+    {
+      "id": "N172",
+      "key": "M1A#1",
+      "name": "1# 分液罐出口管 转角1",
+      "kind": "elbow",
+      "pos": [
+        110,
+        6,
+        -2
+      ]
+    },
+    {
+      "id": "N173",
+      "key": "M1B#1",
+      "name": "2# 分液罐出口管 转角1",
+      "kind": "elbow",
+      "pos": [
+        110,
+        6,
+        16
+      ]
+    },
+    {
+      "id": "N174",
+      "key": "R1#1",
+      "name": "1# 火炬立管底管 转角1",
+      "kind": "elbow",
+      "pos": [
+        136,
+        6,
+        0
+      ]
+    },
+    {
+      "id": "N175",
+      "key": "R1#2",
+      "name": "1# 火炬立管底管 转角2",
+      "kind": "elbow",
+      "pos": [
+        142,
+        6,
+        -6
+      ]
+    },
+    {
+      "id": "N176",
+      "key": "R1#3",
+      "name": "1# 火炬立管底管 转角3",
+      "kind": "elbow",
+      "pos": [
+        147,
+        6,
+        -14
+      ]
+    },
+    {
+      "id": "N177",
+      "key": "F1.Y20",
+      "name": "1# 火炬立管 20m",
+      "kind": "flarebody",
+      "pos": [
+        150,
+        20,
+        -20
+      ]
+    },
+    {
+      "id": "N178",
+      "key": "F1.Y34",
+      "name": "1# 火炬立管 34m",
+      "kind": "flarebody",
+      "pos": [
+        150,
+        34,
+        -20
+      ]
+    },
+    {
+      "id": "N179",
+      "key": "F1.Y48",
+      "name": "1# 火炬立管 48m",
+      "kind": "flarebody",
+      "pos": [
+        150,
+        48,
+        -20
+      ]
+    },
+    {
+      "id": "N180",
+      "key": "F1.Y62",
+      "name": "1# 火炬立管 62m",
+      "kind": "flarebody",
+      "pos": [
+        150,
+        62,
+        -20
+      ]
+    },
+    {
+      "id": "N181",
+      "key": "F1.Y76",
+      "name": "1# 火炬立管 76m",
+      "kind": "flarebody",
+      "pos": [
+        150,
+        76,
+        -20
+      ]
+    },
+    {
+      "id": "N182",
+      "key": "F1.Y90",
+      "name": "1# 火炬立管 90m",
+      "kind": "flarebody",
+      "pos": [
+        150,
+        90,
+        -20
+      ]
+    },
+    {
+      "id": "N183",
+      "key": "R2#1",
+      "name": "2# 火炬立管底管 转角1",
+      "kind": "elbow",
+      "pos": [
+        136,
+        6,
+        12
+      ]
+    },
+    {
+      "id": "N184",
+      "key": "R2#2",
+      "name": "2# 火炬立管底管 转角2",
+      "kind": "elbow",
+      "pos": [
+        144,
+        6,
+        26
+      ]
+    },
+    {
+      "id": "N185",
+      "key": "R2#3",
+      "name": "2# 火炬立管底管 转角3",
+      "kind": "elbow",
+      "pos": [
+        149,
+        6,
+        36
+      ]
+    },
+    {
+      "id": "N186",
+      "key": "F2.Y18",
+      "name": "2# 火炬立管 18m",
+      "kind": "flarebody",
+      "pos": [
+        150,
+        18,
+        40
+      ]
+    },
+    {
+      "id": "N187",
+      "key": "F2.Y30",
+      "name": "2# 火炬立管 30m",
+      "kind": "flarebody",
+      "pos": [
+        150,
+        30,
+        40
+      ]
+    },
+    {
+      "id": "N188",
+      "key": "F2.Y42",
+      "name": "2# 火炬立管 42m",
+      "kind": "flarebody",
+      "pos": [
+        150,
+        42,
+        40
+      ]
+    },
+    {
+      "id": "N189",
+      "key": "F2.Y54",
+      "name": "2# 火炬立管 54m",
+      "kind": "flarebody",
+      "pos": [
+        150,
+        54,
+        40
+      ]
+    },
+    {
+      "id": "N190",
+      "key": "F2.Y66",
+      "name": "2# 火炬立管 66m",
+      "kind": "flarebody",
+      "pos": [
+        150,
+        66,
+        40
+      ]
+    }
+  ],
+  "segments": [
+    {
+      "id": "P001",
+      "name": "1# 火炬总管 -104m→-92m",
+      "from": "N001",
+      "to": "N002",
+      "dn": 600,
+      "length": 12,
+      "k": 1.05,
+      "branchId": "H1",
+      "line": "main",
+      "kind": "main"
+    },
+    {
+      "id": "P002",
+      "name": "1# 火炬总管 -92m→-80m",
+      "from": "N002",
+      "to": "N003",
+      "dn": 600,
+      "length": 12,
+      "k": 1.05,
+      "branchId": "H1",
+      "line": "main",
+      "kind": "main"
+    },
+    {
+      "id": "P003",
+      "name": "1# 火炬总管 -80m→-68m",
+      "from": "N003",
+      "to": "N004",
+      "dn": 600,
+      "length": 12,
+      "k": 1.05,
+      "branchId": "H1",
+      "line": "main",
+      "kind": "main"
+    },
+    {
+      "id": "P004",
+      "name": "1# 火炬总管 -68m→-56m",
+      "from": "N004",
+      "to": "N005",
+      "dn": 600,
+      "length": 12,
+      "k": 1.05,
+      "branchId": "H1",
+      "line": "main",
+      "kind": "main"
+    },
+    {
+      "id": "P005",
+      "name": "1# 火炬总管 -56m→-44m",
+      "from": "N005",
+      "to": "N006",
+      "dn": 900,
+      "length": 12,
+      "k": 1.05,
+      "branchId": "H1",
+      "line": "main",
+      "kind": "main"
+    },
+    {
+      "id": "P006",
+      "name": "1# 火炬总管 -44m→-32m",
+      "from": "N006",
+      "to": "N007",
+      "dn": 900,
+      "length": 12,
+      "k": 1.05,
+      "branchId": "H1",
+      "line": "main",
+      "kind": "main"
+    },
+    {
+      "id": "P007",
+      "name": "1# 火炬总管 -32m→-20m",
+      "from": "N007",
+      "to": "N008",
+      "dn": 900,
+      "length": 12,
+      "k": 1.05,
+      "branchId": "H1",
+      "line": "main",
+      "kind": "main"
+    },
+    {
+      "id": "P008",
+      "name": "1# 火炬总管 -20m→-8m",
+      "from": "N008",
+      "to": "N009",
+      "dn": 900,
+      "length": 12,
+      "k": 1.05,
+      "branchId": "H1",
+      "line": "main",
+      "kind": "main"
+    },
+    {
+      "id": "P009",
+      "name": "1# 火炬总管 -8m→4m",
+      "from": "N009",
+      "to": "N010",
+      "dn": 900,
+      "length": 12,
+      "k": 1.05,
+      "branchId": "H1",
+      "line": "main",
+      "kind": "main"
+    },
+    {
+      "id": "P010",
+      "name": "1# 火炬总管 4m→16m",
+      "from": "N010",
+      "to": "N011",
+      "dn": 1000,
+      "length": 12,
+      "k": 1.05,
+      "branchId": "H1",
+      "line": "main",
+      "kind": "main"
+    },
+    {
+      "id": "P011",
+      "name": "1# 火炬总管 16m→28m",
+      "from": "N011",
+      "to": "N012",
+      "dn": 1000,
+      "length": 12,
+      "k": 1.05,
+      "branchId": "H1",
+      "line": "main",
+      "kind": "main"
+    },
+    {
+      "id": "P012",
+      "name": "1# 火炬总管 28m→40m",
+      "from": "N012",
+      "to": "N013",
+      "dn": 1000,
+      "length": 12,
+      "k": 1.05,
+      "branchId": "H1",
+      "line": "main",
+      "kind": "main"
+    },
+    {
+      "id": "P013",
+      "name": "1# 火炬总管 40m→52m",
+      "from": "N013",
+      "to": "N014",
+      "dn": 1000,
+      "length": 12,
+      "k": 1.05,
+      "branchId": "H1",
+      "line": "main",
+      "kind": "main"
+    },
+    {
+      "id": "P014",
+      "name": "1# 火炬总管 52m→64m",
+      "from": "N014",
+      "to": "N015",
+      "dn": 1000,
+      "length": 12,
+      "k": 1.05,
+      "branchId": "H1",
+      "line": "main",
+      "kind": "main"
+    },
+    {
+      "id": "P015",
+      "name": "1# 火炬总管 64m→70m",
+      "from": "N015",
+      "to": "N016",
+      "dn": 1000,
+      "length": 6,
+      "k": 1.05,
+      "branchId": "H1",
+      "line": "main",
+      "kind": "main"
+    },
+    {
+      "id": "P016",
+      "name": "2# 火炬总管 -104m→-92m",
+      "from": "N017",
+      "to": "N018",
+      "dn": 500,
+      "length": 12,
+      "k": 1.05,
+      "branchId": "H2",
+      "line": "main",
+      "kind": "main"
+    },
+    {
+      "id": "P017",
+      "name": "2# 火炬总管 -92m→-80m",
+      "from": "N018",
+      "to": "N019",
+      "dn": 500,
+      "length": 12,
+      "k": 1.05,
+      "branchId": "H2",
+      "line": "main",
+      "kind": "main"
+    },
+    {
+      "id": "P018",
+      "name": "2# 火炬总管 -80m→-68m",
+      "from": "N019",
+      "to": "N020",
+      "dn": 500,
+      "length": 12,
+      "k": 1.05,
+      "branchId": "H2",
+      "line": "main",
+      "kind": "main"
+    },
+    {
+      "id": "P019",
+      "name": "2# 火炬总管 -68m→-56m",
+      "from": "N020",
+      "to": "N021",
+      "dn": 800,
+      "length": 12,
+      "k": 1.05,
+      "branchId": "H2",
+      "line": "main",
+      "kind": "main"
+    },
+    {
+      "id": "P020",
+      "name": "2# 火炬总管 -56m→-44m",
+      "from": "N021",
+      "to": "N022",
+      "dn": 800,
+      "length": 12,
+      "k": 1.05,
+      "branchId": "H2",
+      "line": "main",
+      "kind": "main"
+    },
+    {
+      "id": "P021",
+      "name": "2# 火炬总管 -44m→-32m",
+      "from": "N022",
+      "to": "N023",
+      "dn": 800,
+      "length": 12,
+      "k": 1.05,
+      "branchId": "H2",
+      "line": "main",
+      "kind": "main"
+    },
+    {
+      "id": "P022",
+      "name": "2# 火炬总管 -32m→-20m",
+      "from": "N023",
+      "to": "N024",
+      "dn": 800,
+      "length": 12,
+      "k": 1.05,
+      "branchId": "H2",
+      "line": "main",
+      "kind": "main"
+    },
+    {
+      "id": "P023",
+      "name": "2# 火炬总管 -20m→-8m",
+      "from": "N024",
+      "to": "N025",
+      "dn": 800,
+      "length": 12,
+      "k": 1.05,
+      "branchId": "H2",
+      "line": "main",
+      "kind": "main"
+    },
+    {
+      "id": "P024",
+      "name": "2# 火炬总管 -8m→4m",
+      "from": "N025",
+      "to": "N026",
+      "dn": 1000,
+      "length": 12,
+      "k": 1.05,
+      "branchId": "H2",
+      "line": "main",
+      "kind": "main"
+    },
+    {
+      "id": "P025",
+      "name": "2# 火炬总管 4m→16m",
+      "from": "N026",
+      "to": "N027",
+      "dn": 1000,
+      "length": 12,
+      "k": 1.05,
+      "branchId": "H2",
+      "line": "main",
+      "kind": "main"
+    },
+    {
+      "id": "P026",
+      "name": "2# 火炬总管 16m→28m",
+      "from": "N027",
+      "to": "N028",
+      "dn": 1000,
+      "length": 12,
+      "k": 1.05,
+      "branchId": "H2",
+      "line": "main",
+      "kind": "main"
+    },
+    {
+      "id": "P027",
+      "name": "2# 火炬总管 28m→40m",
+      "from": "N028",
+      "to": "N029",
+      "dn": 1000,
+      "length": 12,
+      "k": 1.05,
+      "branchId": "H2",
+      "line": "main",
+      "kind": "main"
+    },
+    {
+      "id": "P028",
+      "name": "2# 火炬总管 40m→52m",
+      "from": "N029",
+      "to": "N030",
+      "dn": 1000,
+      "length": 12,
+      "k": 1.05,
+      "branchId": "H2",
+      "line": "main",
+      "kind": "main"
+    },
+    {
+      "id": "P029",
+      "name": "2# 火炬总管 52m→64m",
+      "from": "N030",
+      "to": "N031",
+      "dn": 1000,
+      "length": 12,
+      "k": 1.05,
+      "branchId": "H2",
+      "line": "main",
+      "kind": "main"
+    },
+    {
+      "id": "P030",
+      "name": "2# 火炬总管 64m→70m",
+      "from": "N031",
+      "to": "N032",
+      "dn": 1000,
+      "length": 6,
+      "k": 1.05,
+      "branchId": "H2",
+      "line": "main",
+      "kind": "main"
+    },
+    {
+      "id": "P031",
+      "name": "常减压装置 泄放支管 1",
+      "from": "N033",
+      "to": "N035",
+      "dn": 400,
+      "length": 10,
+      "k": 1.25,
+      "branchId": "S1",
+      "line": "in",
+      "kind": "sub"
+    },
+    {
+      "id": "P032",
+      "name": "常减压装置 泄放支管 2",
+      "from": "N034",
+      "to": "N035",
+      "dn": 400,
+      "length": 10,
+      "k": 1.25,
+      "branchId": "S1",
+      "line": "in",
+      "kind": "sub"
+    },
+    {
+      "id": "P033",
+      "name": "常减压装置 集气立管",
+      "from": "N035",
+      "to": "N036",
+      "dn": 500,
+      "length": 3,
+      "k": 1.45,
+      "branchId": "S1",
+      "line": "in",
+      "kind": "riser"
+    },
+    {
+      "id": "P034",
+      "name": "常减压装置 支管总管",
+      "from": "N036",
+      "to": "N037",
+      "dn": 500,
+      "length": 8,
+      "k": 1.1,
+      "branchId": "S1",
+      "line": "in",
+      "kind": "branch"
+    },
+    {
+      "id": "P035",
+      "name": "常减压装置 支路A 1",
+      "from": "N037",
+      "to": "N038",
+      "dn": 400,
+      "length": 13,
+      "k": 1.15,
+      "branchId": "S1",
+      "line": "A",
+      "kind": "branch"
+    },
+    {
+      "id": "P036",
+      "name": "常减压装置 支路A 2",
+      "from": "N038",
+      "to": "N040",
+      "dn": 400,
+      "length": 18.7,
+      "k": 1.15,
+      "branchId": "S1",
+      "line": "A",
+      "kind": "branch"
+    },
+    {
+      "id": "P037",
+      "name": "常减压装置 支路B 1",
+      "from": "N037",
+      "to": "N039",
+      "dn": 500,
+      "length": 13,
+      "k": 1.15,
+      "branchId": "S1",
+      "line": "B",
+      "kind": "branch"
+    },
+    {
+      "id": "P038",
+      "name": "常减压装置 支路B 2",
+      "from": "N039",
+      "to": "N040",
+      "dn": 500,
+      "length": 18.7,
+      "k": 1.15,
+      "branchId": "S1",
+      "line": "B",
+      "kind": "branch"
+    },
+    {
+      "id": "P039",
+      "name": "常减压装置 水封入口管",
+      "from": "N040",
+      "to": "N041",
+      "dn": 500,
+      "length": 4,
+      "k": 1.3,
+      "branchId": "S1",
+      "line": "main",
+      "kind": "branch"
+    },
+    {
+      "id": "P040",
+      "name": "常减压装置 水封罐筒体",
+      "from": "N041",
+      "to": "N042",
+      "dn": 500,
+      "length": 4,
+      "k": 2.4,
+      "branchId": "S1",
+      "line": "vessel",
+      "kind": "vessel"
+    },
+    {
+      "id": "P041",
+      "name": "常减压装置 水封出口管",
+      "from": "N042",
+      "to": "N002",
+      "dn": 500,
+      "length": 10,
+      "k": 1.6,
+      "branchId": "S1",
+      "line": "out",
+      "kind": "branch"
+    },
+    {
+      "id": "P042",
+      "name": "催化裂化装置 泄放支管 1",
+      "from": "N043",
+      "to": "N045",
+      "dn": 500,
+      "length": 10,
+      "k": 1.25,
+      "branchId": "S2",
+      "line": "in",
+      "kind": "sub"
+    },
+    {
+      "id": "P043",
+      "name": "催化裂化装置 泄放支管 2",
+      "from": "N044",
+      "to": "N045",
+      "dn": 500,
+      "length": 10,
+      "k": 1.25,
+      "branchId": "S2",
+      "line": "in",
+      "kind": "sub"
+    },
+    {
+      "id": "P044",
+      "name": "催化裂化装置 集气立管",
+      "from": "N045",
+      "to": "N046",
+      "dn": 600,
+      "length": 3,
+      "k": 1.45,
+      "branchId": "S2",
+      "line": "in",
+      "kind": "riser"
+    },
+    {
+      "id": "P045",
+      "name": "催化裂化装置 支管总管",
+      "from": "N046",
+      "to": "N047",
+      "dn": 600,
+      "length": 8,
+      "k": 1.1,
+      "branchId": "S2",
+      "line": "in",
+      "kind": "branch"
+    },
+    {
+      "id": "P046",
+      "name": "催化裂化装置 支路A 1",
+      "from": "N047",
+      "to": "N048",
+      "dn": 500,
+      "length": 13,
+      "k": 1.15,
+      "branchId": "S2",
+      "line": "A",
+      "kind": "branch"
+    },
+    {
+      "id": "P047",
+      "name": "催化裂化装置 支路A 2",
+      "from": "N048",
+      "to": "N050",
+      "dn": 500,
+      "length": 18.7,
+      "k": 1.15,
+      "branchId": "S2",
+      "line": "A",
+      "kind": "branch"
+    },
+    {
+      "id": "P048",
+      "name": "催化裂化装置 支路B 1",
+      "from": "N047",
+      "to": "N049",
+      "dn": 600,
+      "length": 13,
+      "k": 1.15,
+      "branchId": "S2",
+      "line": "B",
+      "kind": "branch"
+    },
+    {
+      "id": "P049",
+      "name": "催化裂化装置 支路B 2",
+      "from": "N049",
+      "to": "N050",
+      "dn": 600,
+      "length": 18.7,
+      "k": 1.15,
+      "branchId": "S2",
+      "line": "B",
+      "kind": "branch"
+    },
+    {
+      "id": "P050",
+      "name": "催化裂化装置 水封入口管",
+      "from": "N050",
+      "to": "N051",
+      "dn": 600,
+      "length": 4,
+      "k": 1.3,
+      "branchId": "S2",
+      "line": "main",
+      "kind": "branch"
+    },
+    {
+      "id": "P051",
+      "name": "催化裂化装置 水封罐筒体",
+      "from": "N051",
+      "to": "N052",
+      "dn": 600,
+      "length": 4,
+      "k": 2.4,
+      "branchId": "S2",
+      "line": "vessel",
+      "kind": "vessel"
+    },
+    {
+      "id": "P052",
+      "name": "催化裂化装置 水封出口管",
+      "from": "N052",
+      "to": "N004",
+      "dn": 600,
+      "length": 10,
+      "k": 1.6,
+      "branchId": "S2",
+      "line": "out",
+      "kind": "branch"
+    },
+    {
+      "id": "P053",
+      "name": "加氢裂化装置 泄放支管 1",
+      "from": "N053",
+      "to": "N055",
+      "dn": 400,
+      "length": 10,
+      "k": 1.25,
+      "branchId": "S3",
+      "line": "in",
+      "kind": "sub"
+    },
+    {
+      "id": "P054",
+      "name": "加氢裂化装置 泄放支管 2",
+      "from": "N054",
+      "to": "N055",
+      "dn": 400,
+      "length": 10,
+      "k": 1.25,
+      "branchId": "S3",
+      "line": "in",
+      "kind": "sub"
+    },
+    {
+      "id": "P055",
+      "name": "加氢裂化装置 集气立管",
+      "from": "N055",
+      "to": "N056",
+      "dn": 500,
+      "length": 3,
+      "k": 1.45,
+      "branchId": "S3",
+      "line": "in",
+      "kind": "riser"
+    },
+    {
+      "id": "P056",
+      "name": "加氢裂化装置 支管总管",
+      "from": "N056",
+      "to": "N057",
+      "dn": 500,
+      "length": 8,
+      "k": 1.1,
+      "branchId": "S3",
+      "line": "in",
+      "kind": "branch"
+    },
+    {
+      "id": "P057",
+      "name": "加氢裂化装置 支路A 1",
+      "from": "N057",
+      "to": "N058",
+      "dn": 400,
+      "length": 13,
+      "k": 1.15,
+      "branchId": "S3",
+      "line": "A",
+      "kind": "branch"
+    },
+    {
+      "id": "P058",
+      "name": "加氢裂化装置 支路A 2",
+      "from": "N058",
+      "to": "N060",
+      "dn": 400,
+      "length": 18.7,
+      "k": 1.15,
+      "branchId": "S3",
+      "line": "A",
+      "kind": "branch"
+    },
+    {
+      "id": "P059",
+      "name": "加氢裂化装置 支路B 1",
+      "from": "N057",
+      "to": "N059",
+      "dn": 500,
+      "length": 13,
+      "k": 1.15,
+      "branchId": "S3",
+      "line": "B",
+      "kind": "branch"
+    },
+    {
+      "id": "P060",
+      "name": "加氢裂化装置 支路B 2",
+      "from": "N059",
+      "to": "N060",
+      "dn": 500,
+      "length": 18.7,
+      "k": 1.15,
+      "branchId": "S3",
+      "line": "B",
+      "kind": "branch"
+    },
+    {
+      "id": "P061",
+      "name": "加氢裂化装置 水封入口管",
+      "from": "N060",
+      "to": "N061",
+      "dn": 500,
+      "length": 4,
+      "k": 1.3,
+      "branchId": "S3",
+      "line": "main",
+      "kind": "branch"
+    },
+    {
+      "id": "P062",
+      "name": "加氢裂化装置 水封罐筒体",
+      "from": "N061",
+      "to": "N062",
+      "dn": 500,
+      "length": 4,
+      "k": 2.4,
+      "branchId": "S3",
+      "line": "vessel",
+      "kind": "vessel"
+    },
+    {
+      "id": "P063",
+      "name": "加氢裂化装置 水封出口管",
+      "from": "N062",
+      "to": "N006",
+      "dn": 500,
+      "length": 10,
+      "k": 1.6,
+      "branchId": "S3",
+      "line": "out",
+      "kind": "branch"
+    },
+    {
+      "id": "P064",
+      "name": "延迟焦化装置 泄放支管 1",
+      "from": "N063",
+      "to": "N065",
+      "dn": 350,
+      "length": 10,
+      "k": 1.25,
+      "branchId": "S4",
+      "line": "in",
+      "kind": "sub"
+    },
+    {
+      "id": "P065",
+      "name": "延迟焦化装置 泄放支管 2",
+      "from": "N064",
+      "to": "N065",
+      "dn": 350,
+      "length": 10,
+      "k": 1.25,
+      "branchId": "S4",
+      "line": "in",
+      "kind": "sub"
+    },
+    {
+      "id": "P066",
+      "name": "延迟焦化装置 集气立管",
+      "from": "N065",
+      "to": "N066",
+      "dn": 450,
+      "length": 3,
+      "k": 1.45,
+      "branchId": "S4",
+      "line": "in",
+      "kind": "riser"
+    },
+    {
+      "id": "P067",
+      "name": "延迟焦化装置 支管总管",
+      "from": "N066",
+      "to": "N067",
+      "dn": 450,
+      "length": 8,
+      "k": 1.1,
+      "branchId": "S4",
+      "line": "in",
+      "kind": "branch"
+    },
+    {
+      "id": "P068",
+      "name": "延迟焦化装置 支路A 1",
+      "from": "N067",
+      "to": "N068",
+      "dn": 350,
+      "length": 13,
+      "k": 1.15,
+      "branchId": "S4",
+      "line": "A",
+      "kind": "branch"
+    },
+    {
+      "id": "P069",
+      "name": "延迟焦化装置 支路A 2",
+      "from": "N068",
+      "to": "N070",
+      "dn": 350,
+      "length": 18.7,
+      "k": 1.15,
+      "branchId": "S4",
+      "line": "A",
+      "kind": "branch"
+    },
+    {
+      "id": "P070",
+      "name": "延迟焦化装置 支路B 1",
+      "from": "N067",
+      "to": "N069",
+      "dn": 450,
+      "length": 13,
+      "k": 1.15,
+      "branchId": "S4",
+      "line": "B",
+      "kind": "branch"
+    },
+    {
+      "id": "P071",
+      "name": "延迟焦化装置 支路B 2",
+      "from": "N069",
+      "to": "N070",
+      "dn": 450,
+      "length": 18.7,
+      "k": 1.15,
+      "branchId": "S4",
+      "line": "B",
+      "kind": "branch"
+    },
+    {
+      "id": "P072",
+      "name": "延迟焦化装置 水封入口管",
+      "from": "N070",
+      "to": "N071",
+      "dn": 450,
+      "length": 4,
+      "k": 1.3,
+      "branchId": "S4",
+      "line": "main",
+      "kind": "branch"
+    },
+    {
+      "id": "P073",
+      "name": "延迟焦化装置 水封罐筒体",
+      "from": "N071",
+      "to": "N072",
+      "dn": 450,
+      "length": 4,
+      "k": 2.4,
+      "branchId": "S4",
+      "line": "vessel",
+      "kind": "vessel"
+    },
+    {
+      "id": "P074",
+      "name": "延迟焦化装置 水封出口管",
+      "from": "N072",
+      "to": "N008",
+      "dn": 450,
+      "length": 10,
+      "k": 1.6,
+      "branchId": "S4",
+      "line": "out",
+      "kind": "branch"
+    },
+    {
+      "id": "P075",
+      "name": "连续重整装置 泄放支管 1",
+      "from": "N073",
+      "to": "N075",
+      "dn": 300,
+      "length": 10,
+      "k": 1.25,
+      "branchId": "S5",
+      "line": "in",
+      "kind": "sub"
+    },
+    {
+      "id": "P076",
+      "name": "连续重整装置 泄放支管 2",
+      "from": "N074",
+      "to": "N075",
+      "dn": 300,
+      "length": 10,
+      "k": 1.25,
+      "branchId": "S5",
+      "line": "in",
+      "kind": "sub"
+    },
+    {
+      "id": "P077",
+      "name": "连续重整装置 集气立管",
+      "from": "N075",
+      "to": "N076",
+      "dn": 400,
+      "length": 3,
+      "k": 1.45,
+      "branchId": "S5",
+      "line": "in",
+      "kind": "riser"
+    },
+    {
+      "id": "P078",
+      "name": "连续重整装置 支管总管",
+      "from": "N076",
+      "to": "N077",
+      "dn": 400,
+      "length": 8,
+      "k": 1.1,
+      "branchId": "S5",
+      "line": "in",
+      "kind": "branch"
+    },
+    {
+      "id": "P079",
+      "name": "连续重整装置 支路A 1",
+      "from": "N077",
+      "to": "N078",
+      "dn": 300,
+      "length": 13,
+      "k": 1.15,
+      "branchId": "S5",
+      "line": "A",
+      "kind": "branch"
+    },
+    {
+      "id": "P080",
+      "name": "连续重整装置 支路A 2",
+      "from": "N078",
+      "to": "N080",
+      "dn": 300,
+      "length": 18.7,
+      "k": 1.15,
+      "branchId": "S5",
+      "line": "A",
+      "kind": "branch"
+    },
+    {
+      "id": "P081",
+      "name": "连续重整装置 支路B 1",
+      "from": "N077",
+      "to": "N079",
+      "dn": 400,
+      "length": 13,
+      "k": 1.15,
+      "branchId": "S5",
+      "line": "B",
+      "kind": "branch"
+    },
+    {
+      "id": "P082",
+      "name": "连续重整装置 支路B 2",
+      "from": "N079",
+      "to": "N080",
+      "dn": 400,
+      "length": 18.7,
+      "k": 1.15,
+      "branchId": "S5",
+      "line": "B",
+      "kind": "branch"
+    },
+    {
+      "id": "P083",
+      "name": "连续重整装置 水封入口管",
+      "from": "N080",
+      "to": "N081",
+      "dn": 400,
+      "length": 4,
+      "k": 1.3,
+      "branchId": "S5",
+      "line": "main",
+      "kind": "branch"
+    },
+    {
+      "id": "P084",
+      "name": "连续重整装置 水封罐筒体",
+      "from": "N081",
+      "to": "N082",
+      "dn": 400,
+      "length": 4,
+      "k": 2.4,
+      "branchId": "S5",
+      "line": "vessel",
+      "kind": "vessel"
+    },
+    {
+      "id": "P085",
+      "name": "连续重整装置 水封出口管",
+      "from": "N082",
+      "to": "N010",
+      "dn": 400,
+      "length": 10,
+      "k": 1.6,
+      "branchId": "S5",
+      "line": "out",
+      "kind": "branch"
+    },
+    {
+      "id": "P086",
+      "name": "罐区 泄放支管 1",
+      "from": "N083",
+      "to": "N085",
+      "dn": 250,
+      "length": 10,
+      "k": 1.25,
+      "branchId": "S6",
+      "line": "in",
+      "kind": "sub"
+    },
+    {
+      "id": "P087",
+      "name": "罐区 泄放支管 2",
+      "from": "N084",
+      "to": "N085",
+      "dn": 250,
+      "length": 10,
+      "k": 1.25,
+      "branchId": "S6",
+      "line": "in",
+      "kind": "sub"
+    },
+    {
+      "id": "P088",
+      "name": "罐区 集气立管",
+      "from": "N085",
+      "to": "N086",
+      "dn": 350,
+      "length": 3,
+      "k": 1.45,
+      "branchId": "S6",
+      "line": "in",
+      "kind": "riser"
+    },
+    {
+      "id": "P089",
+      "name": "罐区 支管总管",
+      "from": "N086",
+      "to": "N087",
+      "dn": 350,
+      "length": 8,
+      "k": 1.1,
+      "branchId": "S6",
+      "line": "in",
+      "kind": "branch"
+    },
+    {
+      "id": "P090",
+      "name": "罐区 支路A 1",
+      "from": "N087",
+      "to": "N088",
+      "dn": 250,
+      "length": 13,
+      "k": 1.15,
+      "branchId": "S6",
+      "line": "A",
+      "kind": "branch"
+    },
+    {
+      "id": "P091",
+      "name": "罐区 支路A 2",
+      "from": "N088",
+      "to": "N090",
+      "dn": 250,
+      "length": 18.7,
+      "k": 1.15,
+      "branchId": "S6",
+      "line": "A",
+      "kind": "branch"
+    },
+    {
+      "id": "P092",
+      "name": "罐区 支路B 1",
+      "from": "N087",
+      "to": "N089",
+      "dn": 350,
+      "length": 13,
+      "k": 1.15,
+      "branchId": "S6",
+      "line": "B",
+      "kind": "branch"
+    },
+    {
+      "id": "P093",
+      "name": "罐区 支路B 2",
+      "from": "N089",
+      "to": "N090",
+      "dn": 350,
+      "length": 18.7,
+      "k": 1.15,
+      "branchId": "S6",
+      "line": "B",
+      "kind": "branch"
+    },
+    {
+      "id": "P094",
+      "name": "罐区 水封入口管",
+      "from": "N090",
+      "to": "N091",
+      "dn": 350,
+      "length": 4,
+      "k": 1.3,
+      "branchId": "S6",
+      "line": "main",
+      "kind": "branch"
+    },
+    {
+      "id": "P095",
+      "name": "罐区 水封罐筒体",
+      "from": "N091",
+      "to": "N092",
+      "dn": 350,
+      "length": 4,
+      "k": 2.4,
+      "branchId": "S6",
+      "line": "vessel",
+      "kind": "vessel"
+    },
+    {
+      "id": "P096",
+      "name": "罐区 水封出口管",
+      "from": "N092",
+      "to": "N012",
+      "dn": 350,
+      "length": 10,
+      "k": 1.6,
+      "branchId": "S6",
+      "line": "out",
+      "kind": "branch"
+    },
+    {
+      "id": "P097",
+      "name": "乙烯裂解装置 泄放支管 1",
+      "from": "N093",
+      "to": "N095",
+      "dn": 500,
+      "length": 10,
+      "k": 1.25,
+      "branchId": "S7",
+      "line": "in",
+      "kind": "sub"
+    },
+    {
+      "id": "P098",
+      "name": "乙烯裂解装置 泄放支管 2",
+      "from": "N094",
+      "to": "N095",
+      "dn": 500,
+      "length": 10,
+      "k": 1.25,
+      "branchId": "S7",
+      "line": "in",
+      "kind": "sub"
+    },
+    {
+      "id": "P099",
+      "name": "乙烯裂解装置 集气立管",
+      "from": "N095",
+      "to": "N096",
+      "dn": 600,
+      "length": 3,
+      "k": 1.45,
+      "branchId": "S7",
+      "line": "in",
+      "kind": "riser"
+    },
+    {
+      "id": "P100",
+      "name": "乙烯裂解装置 支管总管",
+      "from": "N096",
+      "to": "N097",
+      "dn": 600,
+      "length": 8,
+      "k": 1.1,
+      "branchId": "S7",
+      "line": "in",
+      "kind": "branch"
+    },
+    {
+      "id": "P101",
+      "name": "乙烯裂解装置 支路A 1",
+      "from": "N097",
+      "to": "N098",
+      "dn": 500,
+      "length": 13,
+      "k": 1.15,
+      "branchId": "S7",
+      "line": "A",
+      "kind": "branch"
+    },
+    {
+      "id": "P102",
+      "name": "乙烯裂解装置 支路A 2",
+      "from": "N098",
+      "to": "N100",
+      "dn": 500,
+      "length": 18.7,
+      "k": 1.15,
+      "branchId": "S7",
+      "line": "A",
+      "kind": "branch"
+    },
+    {
+      "id": "P103",
+      "name": "乙烯裂解装置 支路B 1",
+      "from": "N097",
+      "to": "N099",
+      "dn": 600,
+      "length": 13,
+      "k": 1.15,
+      "branchId": "S7",
+      "line": "B",
+      "kind": "branch"
+    },
+    {
+      "id": "P104",
+      "name": "乙烯裂解装置 支路B 2",
+      "from": "N099",
+      "to": "N100",
+      "dn": 600,
+      "length": 18.7,
+      "k": 1.15,
+      "branchId": "S7",
+      "line": "B",
+      "kind": "branch"
+    },
+    {
+      "id": "P105",
+      "name": "乙烯裂解装置 水封入口管",
+      "from": "N100",
+      "to": "N101",
+      "dn": 600,
+      "length": 4,
+      "k": 1.3,
+      "branchId": "S7",
+      "line": "main",
+      "kind": "branch"
+    },
+    {
+      "id": "P106",
+      "name": "乙烯裂解装置 水封罐筒体",
+      "from": "N101",
+      "to": "N102",
+      "dn": 600,
+      "length": 4,
+      "k": 2.4,
+      "branchId": "S7",
+      "line": "vessel",
+      "kind": "vessel"
+    },
+    {
+      "id": "P107",
+      "name": "乙烯裂解装置 水封出口管",
+      "from": "N102",
+      "to": "N019",
+      "dn": 600,
+      "length": 10,
+      "k": 1.6,
+      "branchId": "S7",
+      "line": "out",
+      "kind": "branch"
+    },
+    {
+      "id": "P108",
+      "name": "硫磺回收装置 泄放支管 1",
+      "from": "N103",
+      "to": "N105",
+      "dn": 250,
+      "length": 10,
+      "k": 1.25,
+      "branchId": "S8",
+      "line": "in",
+      "kind": "sub"
+    },
+    {
+      "id": "P109",
+      "name": "硫磺回收装置 泄放支管 2",
+      "from": "N104",
+      "to": "N105",
+      "dn": 250,
+      "length": 10,
+      "k": 1.25,
+      "branchId": "S8",
+      "line": "in",
+      "kind": "sub"
+    },
+    {
+      "id": "P110",
+      "name": "硫磺回收装置 集气立管",
+      "from": "N105",
+      "to": "N106",
+      "dn": 350,
+      "length": 3,
+      "k": 1.45,
+      "branchId": "S8",
+      "line": "in",
+      "kind": "riser"
+    },
+    {
+      "id": "P111",
+      "name": "硫磺回收装置 支管总管",
+      "from": "N106",
+      "to": "N107",
+      "dn": 350,
+      "length": 8,
+      "k": 1.1,
+      "branchId": "S8",
+      "line": "in",
+      "kind": "branch"
+    },
+    {
+      "id": "P112",
+      "name": "硫磺回收装置 支路A 1",
+      "from": "N107",
+      "to": "N108",
+      "dn": 250,
+      "length": 13,
+      "k": 1.15,
+      "branchId": "S8",
+      "line": "A",
+      "kind": "branch"
+    },
+    {
+      "id": "P113",
+      "name": "硫磺回收装置 支路A 2",
+      "from": "N108",
+      "to": "N110",
+      "dn": 250,
+      "length": 18.7,
+      "k": 1.15,
+      "branchId": "S8",
+      "line": "A",
+      "kind": "branch"
+    },
+    {
+      "id": "P114",
+      "name": "硫磺回收装置 支路B 1",
+      "from": "N107",
+      "to": "N109",
+      "dn": 350,
+      "length": 13,
+      "k": 1.15,
+      "branchId": "S8",
+      "line": "B",
+      "kind": "branch"
+    },
+    {
+      "id": "P115",
+      "name": "硫磺回收装置 支路B 2",
+      "from": "N109",
+      "to": "N110",
+      "dn": 350,
+      "length": 18.7,
+      "k": 1.15,
+      "branchId": "S8",
+      "line": "B",
+      "kind": "branch"
+    },
+    {
+      "id": "P116",
+      "name": "硫磺回收装置 水封入口管",
+      "from": "N110",
+      "to": "N111",
+      "dn": 350,
+      "length": 4,
+      "k": 1.3,
+      "branchId": "S8",
+      "line": "main",
+      "kind": "branch"
+    },
+    {
+      "id": "P117",
+      "name": "硫磺回收装置 水封罐筒体",
+      "from": "N111",
+      "to": "N112",
+      "dn": 350,
+      "length": 4,
+      "k": 2.4,
+      "branchId": "S8",
+      "line": "vessel",
+      "kind": "vessel"
+    },
+    {
+      "id": "P118",
+      "name": "硫磺回收装置 水封出口管",
+      "from": "N112",
+      "to": "N021",
+      "dn": 350,
+      "length": 10,
+      "k": 1.6,
+      "branchId": "S8",
+      "line": "out",
+      "kind": "branch"
+    },
+    {
+      "id": "P119",
+      "name": "芳烃联合装置 泄放支管 1",
+      "from": "N113",
+      "to": "N115",
+      "dn": 350,
+      "length": 10,
+      "k": 1.25,
+      "branchId": "S9",
+      "line": "in",
+      "kind": "sub"
+    },
+    {
+      "id": "P120",
+      "name": "芳烃联合装置 泄放支管 2",
+      "from": "N114",
+      "to": "N115",
+      "dn": 350,
+      "length": 10,
+      "k": 1.25,
+      "branchId": "S9",
+      "line": "in",
+      "kind": "sub"
+    },
+    {
+      "id": "P121",
+      "name": "芳烃联合装置 集气立管",
+      "from": "N115",
+      "to": "N116",
+      "dn": 450,
+      "length": 3,
+      "k": 1.45,
+      "branchId": "S9",
+      "line": "in",
+      "kind": "riser"
+    },
+    {
+      "id": "P122",
+      "name": "芳烃联合装置 支管总管",
+      "from": "N116",
+      "to": "N117",
+      "dn": 450,
+      "length": 8,
+      "k": 1.1,
+      "branchId": "S9",
+      "line": "in",
+      "kind": "branch"
+    },
+    {
+      "id": "P123",
+      "name": "芳烃联合装置 支路A 1",
+      "from": "N117",
+      "to": "N118",
+      "dn": 350,
+      "length": 13,
+      "k": 1.15,
+      "branchId": "S9",
+      "line": "A",
+      "kind": "branch"
+    },
+    {
+      "id": "P124",
+      "name": "芳烃联合装置 支路A 2",
+      "from": "N118",
+      "to": "N120",
+      "dn": 350,
+      "length": 18.7,
+      "k": 1.15,
+      "branchId": "S9",
+      "line": "A",
+      "kind": "branch"
+    },
+    {
+      "id": "P125",
+      "name": "芳烃联合装置 支路B 1",
+      "from": "N117",
+      "to": "N119",
+      "dn": 450,
+      "length": 13,
+      "k": 1.15,
+      "branchId": "S9",
+      "line": "B",
+      "kind": "branch"
+    },
+    {
+      "id": "P126",
+      "name": "芳烃联合装置 支路B 2",
+      "from": "N119",
+      "to": "N120",
+      "dn": 450,
+      "length": 18.7,
+      "k": 1.15,
+      "branchId": "S9",
+      "line": "B",
+      "kind": "branch"
+    },
+    {
+      "id": "P127",
+      "name": "芳烃联合装置 水封入口管",
+      "from": "N120",
+      "to": "N121",
+      "dn": 450,
+      "length": 4,
+      "k": 1.3,
+      "branchId": "S9",
+      "line": "main",
+      "kind": "branch"
+    },
+    {
+      "id": "P128",
+      "name": "芳烃联合装置 水封罐筒体",
+      "from": "N121",
+      "to": "N122",
+      "dn": 450,
+      "length": 4,
+      "k": 2.4,
+      "branchId": "S9",
+      "line": "vessel",
+      "kind": "vessel"
+    },
+    {
+      "id": "P129",
+      "name": "芳烃联合装置 水封出口管",
+      "from": "N122",
+      "to": "N023",
+      "dn": 450,
+      "length": 10,
+      "k": 1.6,
+      "branchId": "S9",
+      "line": "out",
+      "kind": "branch"
+    },
+    {
+      "id": "P130",
+      "name": "气体分馏装置 泄放支管 1",
+      "from": "N123",
+      "to": "N125",
+      "dn": 300,
+      "length": 10,
+      "k": 1.25,
+      "branchId": "S10",
+      "line": "in",
+      "kind": "sub"
+    },
+    {
+      "id": "P131",
+      "name": "气体分馏装置 泄放支管 2",
+      "from": "N124",
+      "to": "N125",
+      "dn": 300,
+      "length": 10,
+      "k": 1.25,
+      "branchId": "S10",
+      "line": "in",
+      "kind": "sub"
+    },
+    {
+      "id": "P132",
+      "name": "气体分馏装置 集气立管",
+      "from": "N125",
+      "to": "N126",
+      "dn": 400,
+      "length": 3,
+      "k": 1.45,
+      "branchId": "S10",
+      "line": "in",
+      "kind": "riser"
+    },
+    {
+      "id": "P133",
+      "name": "气体分馏装置 支管总管",
+      "from": "N126",
+      "to": "N127",
+      "dn": 400,
+      "length": 8,
+      "k": 1.1,
+      "branchId": "S10",
+      "line": "in",
+      "kind": "branch"
+    },
+    {
+      "id": "P134",
+      "name": "气体分馏装置 支路A 1",
+      "from": "N127",
+      "to": "N128",
+      "dn": 300,
+      "length": 13,
+      "k": 1.15,
+      "branchId": "S10",
+      "line": "A",
+      "kind": "branch"
+    },
+    {
+      "id": "P135",
+      "name": "气体分馏装置 支路A 2",
+      "from": "N128",
+      "to": "N130",
+      "dn": 300,
+      "length": 18.7,
+      "k": 1.15,
+      "branchId": "S10",
+      "line": "A",
+      "kind": "branch"
+    },
+    {
+      "id": "P136",
+      "name": "气体分馏装置 支路B 1",
+      "from": "N127",
+      "to": "N129",
+      "dn": 400,
+      "length": 13,
+      "k": 1.15,
+      "branchId": "S10",
+      "line": "B",
+      "kind": "branch"
+    },
+    {
+      "id": "P137",
+      "name": "气体分馏装置 支路B 2",
+      "from": "N129",
+      "to": "N130",
+      "dn": 400,
+      "length": 18.7,
+      "k": 1.15,
+      "branchId": "S10",
+      "line": "B",
+      "kind": "branch"
+    },
+    {
+      "id": "P138",
+      "name": "气体分馏装置 水封入口管",
+      "from": "N130",
+      "to": "N131",
+      "dn": 400,
+      "length": 4,
+      "k": 1.3,
+      "branchId": "S10",
+      "line": "main",
+      "kind": "branch"
+    },
+    {
+      "id": "P139",
+      "name": "气体分馏装置 水封罐筒体",
+      "from": "N131",
+      "to": "N132",
+      "dn": 400,
+      "length": 4,
+      "k": 2.4,
+      "branchId": "S10",
+      "line": "vessel",
+      "kind": "vessel"
+    },
+    {
+      "id": "P140",
+      "name": "气体分馏装置 水封出口管",
+      "from": "N132",
+      "to": "N025",
+      "dn": 400,
+      "length": 10,
+      "k": 1.6,
+      "branchId": "S10",
+      "line": "out",
+      "kind": "branch"
+    },
+    {
+      "id": "P141",
+      "name": "污水处理场 泄放支管 1",
+      "from": "N133",
+      "to": "N135",
+      "dn": 200,
+      "length": 10,
+      "k": 1.25,
+      "branchId": "S11",
+      "line": "in",
+      "kind": "sub"
+    },
+    {
+      "id": "P142",
+      "name": "污水处理场 泄放支管 2",
+      "from": "N134",
+      "to": "N135",
+      "dn": 200,
+      "length": 10,
+      "k": 1.25,
+      "branchId": "S11",
+      "line": "in",
+      "kind": "sub"
+    },
+    {
+      "id": "P143",
+      "name": "污水处理场 集气立管",
+      "from": "N135",
+      "to": "N136",
+      "dn": 300,
+      "length": 3,
+      "k": 1.45,
+      "branchId": "S11",
+      "line": "in",
+      "kind": "riser"
+    },
+    {
+      "id": "P144",
+      "name": "污水处理场 支管总管",
+      "from": "N136",
+      "to": "N137",
+      "dn": 300,
+      "length": 8,
+      "k": 1.1,
+      "branchId": "S11",
+      "line": "in",
+      "kind": "branch"
+    },
+    {
+      "id": "P145",
+      "name": "污水处理场 支路A 1",
+      "from": "N137",
+      "to": "N138",
+      "dn": 200,
+      "length": 13,
+      "k": 1.15,
+      "branchId": "S11",
+      "line": "A",
+      "kind": "branch"
+    },
+    {
+      "id": "P146",
+      "name": "污水处理场 支路A 2",
+      "from": "N138",
+      "to": "N140",
+      "dn": 200,
+      "length": 18.7,
+      "k": 1.15,
+      "branchId": "S11",
+      "line": "A",
+      "kind": "branch"
+    },
+    {
+      "id": "P147",
+      "name": "污水处理场 支路B 1",
+      "from": "N137",
+      "to": "N139",
+      "dn": 300,
+      "length": 13,
+      "k": 1.15,
+      "branchId": "S11",
+      "line": "B",
+      "kind": "branch"
+    },
+    {
+      "id": "P148",
+      "name": "污水处理场 支路B 2",
+      "from": "N139",
+      "to": "N140",
+      "dn": 300,
+      "length": 18.7,
+      "k": 1.15,
+      "branchId": "S11",
+      "line": "B",
+      "kind": "branch"
+    },
+    {
+      "id": "P149",
+      "name": "污水处理场 水封入口管",
+      "from": "N140",
+      "to": "N141",
+      "dn": 300,
+      "length": 4,
+      "k": 1.3,
+      "branchId": "S11",
+      "line": "main",
+      "kind": "branch"
+    },
+    {
+      "id": "P150",
+      "name": "污水处理场 水封罐筒体",
+      "from": "N141",
+      "to": "N142",
+      "dn": 300,
+      "length": 4,
+      "k": 2.4,
+      "branchId": "S11",
+      "line": "vessel",
+      "kind": "vessel"
+    },
+    {
+      "id": "P151",
+      "name": "污水处理场 水封出口管",
+      "from": "N142",
+      "to": "N027",
+      "dn": 300,
+      "length": 10,
+      "k": 1.6,
+      "branchId": "S11",
+      "line": "out",
+      "kind": "branch"
+    },
+    {
+      "id": "P152",
+      "name": "火炬气回收单元 泄放支管 1",
+      "from": "N143",
+      "to": "N145",
+      "dn": 400,
+      "length": 10,
+      "k": 1.25,
+      "branchId": "S12",
+      "line": "in",
+      "kind": "sub"
+    },
+    {
+      "id": "P153",
+      "name": "火炬气回收单元 泄放支管 2",
+      "from": "N144",
+      "to": "N145",
+      "dn": 400,
+      "length": 10,
+      "k": 1.25,
+      "branchId": "S12",
+      "line": "in",
+      "kind": "sub"
+    },
+    {
+      "id": "P154",
+      "name": "火炬气回收单元 集气立管",
+      "from": "N145",
+      "to": "N146",
+      "dn": 500,
+      "length": 3,
+      "k": 1.45,
+      "branchId": "S12",
+      "line": "in",
+      "kind": "riser"
+    },
+    {
+      "id": "P155",
+      "name": "火炬气回收单元 支管总管",
+      "from": "N146",
+      "to": "N147",
+      "dn": 500,
+      "length": 8,
+      "k": 1.1,
+      "branchId": "S12",
+      "line": "in",
+      "kind": "branch"
+    },
+    {
+      "id": "P156",
+      "name": "火炬气回收单元 支路A 1",
+      "from": "N147",
+      "to": "N148",
+      "dn": 400,
+      "length": 13,
+      "k": 1.15,
+      "branchId": "S12",
+      "line": "A",
+      "kind": "branch"
+    },
+    {
+      "id": "P157",
+      "name": "火炬气回收单元 支路A 2",
+      "from": "N148",
+      "to": "N150",
+      "dn": 400,
+      "length": 18.7,
+      "k": 1.15,
+      "branchId": "S12",
+      "line": "A",
+      "kind": "branch"
+    },
+    {
+      "id": "P158",
+      "name": "火炬气回收单元 支路B 1",
+      "from": "N147",
+      "to": "N149",
+      "dn": 500,
+      "length": 13,
+      "k": 1.15,
+      "branchId": "S12",
+      "line": "B",
+      "kind": "branch"
+    },
+    {
+      "id": "P159",
+      "name": "火炬气回收单元 支路B 2",
+      "from": "N149",
+      "to": "N150",
+      "dn": 500,
+      "length": 18.7,
+      "k": 1.15,
+      "branchId": "S12",
+      "line": "B",
+      "kind": "branch"
+    },
+    {
+      "id": "P160",
+      "name": "火炬气回收单元 水封入口管",
+      "from": "N150",
+      "to": "N151",
+      "dn": 500,
+      "length": 4,
+      "k": 1.3,
+      "branchId": "S12",
+      "line": "main",
+      "kind": "branch"
+    },
+    {
+      "id": "P161",
+      "name": "火炬气回收单元 水封罐筒体",
+      "from": "N151",
+      "to": "N152",
+      "dn": 500,
+      "length": 4,
+      "k": 2.4,
+      "branchId": "S12",
+      "line": "vessel",
+      "kind": "vessel"
+    },
+    {
+      "id": "P162",
+      "name": "火炬气回收单元 水封出口管",
+      "from": "N152",
+      "to": "N029",
+      "dn": 500,
+      "length": 10,
+      "k": 1.6,
+      "branchId": "S12",
+      "line": "out",
+      "kind": "branch"
+    },
+    {
+      "id": "P163",
+      "name": "1# 总管末端立管",
+      "from": "N016",
+      "to": "N153",
+      "dn": 1000,
+      "length": 0,
+      "k": 1.3,
+      "branchId": "H1",
+      "line": "main",
+      "kind": "main"
+    },
+    {
+      "id": "P164",
+      "name": "2# 总管末端立管",
+      "from": "N032",
+      "to": "N154",
+      "dn": 1000,
+      "length": 0,
+      "k": 1.3,
+      "branchId": "H2",
+      "line": "main",
+      "kind": "main"
+    },
+    {
+      "id": "P165",
+      "name": "1# 火炬总管东段 管段1",
+      "from": "N153",
+      "to": "N165",
+      "dn": 900,
+      "length": 8,
+      "k": 1.1,
+      "branchId": "MAIN",
+      "line": "main",
+      "kind": "trunk"
+    },
+    {
+      "id": "P166",
+      "name": "1# 火炬总管东段 管段2",
+      "from": "N165",
+      "to": "N166",
+      "dn": 900,
+      "length": 6.7,
+      "k": 1.1,
+      "branchId": "MAIN",
+      "line": "main",
+      "kind": "trunk"
+    },
+    {
+      "id": "P167",
+      "name": "1# 火炬总管东段 管段3",
+      "from": "N166",
+      "to": "N167",
+      "dn": 900,
+      "length": 9.2,
+      "k": 1.1,
+      "branchId": "MAIN",
+      "line": "main",
+      "kind": "trunk"
+    },
+    {
+      "id": "P168",
+      "name": "1# 分液罐入口管",
+      "from": "N167",
+      "to": "N155",
+      "dn": 900,
+      "length": 7.2,
+      "k": 1.6,
+      "branchId": "MAIN",
+      "line": "main",
+      "kind": "trunk"
+    },
+    {
+      "id": "P169",
+      "name": "1# 分液罐筒体",
+      "from": "N155",
+      "to": "N156",
+      "dn": 900,
+      "length": 12,
+      "k": 2.2,
+      "branchId": "MAIN",
+      "line": "main",
+      "kind": "vessel"
+    },
+    {
+      "id": "P170",
+      "name": "1#→2# 跨线 管段1",
+      "from": "N153",
+      "to": "N168",
+      "dn": 700,
+      "length": 31,
+      "k": 1.35,
+      "branchId": "XO",
+      "line": "main",
+      "kind": "crossover"
+    },
+    {
+      "id": "P171",
+      "name": "1#→2# 跨线 管段2",
+      "from": "N168",
+      "to": "N169",
+      "dn": 700,
+      "length": 12.8,
+      "k": 1.35,
+      "branchId": "XO",
+      "line": "main",
+      "kind": "crossover"
+    },
+    {
+      "id": "P172",
+      "name": "跨线至 2# 分液罐",
+      "from": "N169",
+      "to": "N157",
+      "dn": 700,
+      "length": 11.3,
+      "k": 1.35,
+      "branchId": "XO",
+      "line": "main",
+      "kind": "crossover"
+    },
+    {
+      "id": "P173",
+      "name": "2# 总管东段 管段1",
+      "from": "N154",
+      "to": "N170",
+      "dn": 1000,
+      "length": 12,
+      "k": 1.15,
+      "branchId": "H2",
+      "line": "main",
+      "kind": "main"
+    },
+    {
+      "id": "P174",
+      "name": "2# 总管东段 管段2",
+      "from": "N170",
+      "to": "N171",
+      "dn": 1000,
+      "length": 6.3,
+      "k": 1.15,
+      "branchId": "H2",
+      "line": "main",
+      "kind": "main"
+    },
+    {
+      "id": "P175",
+      "name": "2# 分液罐入口管",
+      "from": "N171",
+      "to": "N157",
+      "dn": 1000,
+      "length": 6.3,
+      "k": 1.6,
+      "branchId": "H2",
+      "line": "main",
+      "kind": "trunk"
+    },
+    {
+      "id": "P176",
+      "name": "2# 分液罐筒体",
+      "from": "N157",
+      "to": "N158",
+      "dn": 1000,
+      "length": 12,
+      "k": 2.2,
+      "branchId": "H2",
+      "line": "main",
+      "kind": "vessel"
+    },
+    {
+      "id": "P177",
+      "name": "1# 分液罐出口管 管段1",
+      "from": "N156",
+      "to": "N172",
+      "dn": 900,
+      "length": 5.7,
+      "k": 1.4,
+      "branchId": "MAIN",
+      "line": "main",
+      "kind": "trunk"
+    },
+    {
+      "id": "P178",
+      "name": "1# 分液罐出口管 2",
+      "from": "N172",
+      "to": "N159",
+      "dn": 900,
+      "length": 7.2,
+      "k": 1.4,
+      "branchId": "MAIN",
+      "line": "main",
+      "kind": "trunk"
+    },
+    {
+      "id": "P179",
+      "name": "2# 分液罐出口管 管段1",
+      "from": "N158",
+      "to": "N173",
+      "dn": 1000,
+      "length": 10.8,
+      "k": 1.4,
+      "branchId": "H2",
+      "line": "main",
+      "kind": "trunk"
+    },
+    {
+      "id": "P180",
+      "name": "2# 分液罐出口管 2",
+      "from": "N173",
+      "to": "N159",
+      "dn": 1000,
+      "length": 12.6,
+      "k": 1.4,
+      "branchId": "H2",
+      "line": "main",
+      "kind": "trunk"
+    },
+    {
+      "id": "P181",
+      "name": "主水封入口管",
+      "from": "N159",
+      "to": "N160",
+      "dn": 1200,
+      "length": 0,
+      "k": 1.3,
+      "branchId": "MAIN",
+      "line": "main",
+      "kind": "trunk"
+    },
+    {
+      "id": "P182",
+      "name": "主水封罐筒体",
+      "from": "N160",
+      "to": "N161",
+      "dn": 1200,
+      "length": 8,
+      "k": 2.6,
+      "branchId": "MAIN",
+      "line": "main",
+      "kind": "vessel"
+    },
+    {
+      "id": "P183",
+      "name": "主水封出口管",
+      "from": "N161",
+      "to": "N162",
+      "dn": 1200,
+      "length": 8,
+      "k": 1.2,
+      "branchId": "MAIN",
+      "line": "main",
+      "kind": "trunk"
+    },
+    {
+      "id": "P184",
+      "name": "1# 火炬立管底管 管段1",
+      "from": "N162",
+      "to": "N174",
+      "dn": 1200,
+      "length": 7.2,
+      "k": 1.2,
+      "branchId": "R1",
+      "line": "main",
+      "kind": "riser"
+    },
+    {
+      "id": "P185",
+      "name": "1# 火炬立管底管 管段2",
+      "from": "N174",
+      "to": "N175",
+      "dn": 1200,
+      "length": 8.5,
+      "k": 1.2,
+      "branchId": "R1",
+      "line": "main",
+      "kind": "riser"
+    },
+    {
+      "id": "P186",
+      "name": "1# 火炬立管底管 管段3",
+      "from": "N175",
+      "to": "N176",
+      "dn": 1200,
+      "length": 9.4,
+      "k": 1.2,
+      "branchId": "R1",
+      "line": "main",
+      "kind": "riser"
+    },
+    {
+      "id": "P187",
+      "name": "1# 火炬立管底管 4",
+      "from": "N176",
+      "to": "N163",
+      "dn": 1200,
+      "length": 6.7,
+      "k": 1.2,
+      "branchId": "R1",
+      "line": "main",
+      "kind": "riser"
+    },
+    {
+      "id": "P188",
+      "name": "1# 火炬立管 20m",
+      "from": "N163",
+      "to": "N177",
+      "dn": 1200,
+      "length": 14,
+      "k": 1,
+      "branchId": "R1",
+      "line": "main",
+      "kind": "riser"
+    },
+    {
+      "id": "P189",
+      "name": "1# 火炬立管 34m",
+      "from": "N177",
+      "to": "N178",
+      "dn": 1200,
+      "length": 14,
+      "k": 1,
+      "branchId": "R1",
+      "line": "main",
+      "kind": "riser"
+    },
+    {
+      "id": "P190",
+      "name": "1# 火炬立管 48m",
+      "from": "N178",
+      "to": "N179",
+      "dn": 1200,
+      "length": 14,
+      "k": 1,
+      "branchId": "R1",
+      "line": "main",
+      "kind": "riser"
+    },
+    {
+      "id": "P191",
+      "name": "1# 火炬立管 62m",
+      "from": "N179",
+      "to": "N180",
+      "dn": 1200,
+      "length": 14,
+      "k": 1,
+      "branchId": "R1",
+      "line": "main",
+      "kind": "riser"
+    },
+    {
+      "id": "P192",
+      "name": "1# 火炬立管 76m",
+      "from": "N180",
+      "to": "N181",
+      "dn": 1200,
+      "length": 14,
+      "k": 1,
+      "branchId": "R1",
+      "line": "main",
+      "kind": "riser"
+    },
+    {
+      "id": "P193",
+      "name": "1# 火炬立管 90m",
+      "from": "N181",
+      "to": "N182",
+      "dn": 1200,
+      "length": 14,
+      "k": 1,
+      "branchId": "R1",
+      "line": "main",
+      "kind": "riser"
+    },
+    {
+      "id": "P194",
+      "name": "2# 火炬立管底管 管段1",
+      "from": "N162",
+      "to": "N183",
+      "dn": 1000,
+      "length": 10,
+      "k": 1.2,
+      "branchId": "R2",
+      "line": "main",
+      "kind": "riser"
+    },
+    {
+      "id": "P195",
+      "name": "2# 火炬立管底管 管段2",
+      "from": "N183",
+      "to": "N184",
+      "dn": 1000,
+      "length": 16.1,
+      "k": 1.2,
+      "branchId": "R2",
+      "line": "main",
+      "kind": "riser"
+    },
+    {
+      "id": "P196",
+      "name": "2# 火炬立管底管 管段3",
+      "from": "N184",
+      "to": "N185",
+      "dn": 1000,
+      "length": 11.2,
+      "k": 1.2,
+      "branchId": "R2",
+      "line": "main",
+      "kind": "riser"
+    },
+    {
+      "id": "P197",
+      "name": "2# 火炬立管底管 4",
+      "from": "N185",
+      "to": "N164",
+      "dn": 1000,
+      "length": 4.1,
+      "k": 1.2,
+      "branchId": "R2",
+      "line": "main",
+      "kind": "riser"
+    },
+    {
+      "id": "P198",
+      "name": "2# 火炬立管 18m",
+      "from": "N164",
+      "to": "N186",
+      "dn": 1000,
+      "length": 12,
+      "k": 1,
+      "branchId": "R2",
+      "line": "main",
+      "kind": "riser"
+    },
+    {
+      "id": "P199",
+      "name": "2# 火炬立管 30m",
+      "from": "N186",
+      "to": "N187",
+      "dn": 1000,
+      "length": 12,
+      "k": 1,
+      "branchId": "R2",
+      "line": "main",
+      "kind": "riser"
+    },
+    {
+      "id": "P200",
+      "name": "2# 火炬立管 42m",
+      "from": "N187",
+      "to": "N188",
+      "dn": 1000,
+      "length": 12,
+      "k": 1,
+      "branchId": "R2",
+      "line": "main",
+      "kind": "riser"
+    },
+    {
+      "id": "P201",
+      "name": "2# 火炬立管 54m",
+      "from": "N188",
+      "to": "N189",
+      "dn": 1000,
+      "length": 12,
+      "k": 1,
+      "branchId": "R2",
+      "line": "main",
+      "kind": "riser"
+    },
+    {
+      "id": "P202",
+      "name": "2# 火炬立管 66m",
+      "from": "N189",
+      "to": "N190",
+      "dn": 1000,
+      "length": 12,
+      "k": 1,
+      "branchId": "R2",
+      "line": "main",
+      "kind": "riser"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "WS-S1",
+      "type": "waterseal",
+      "name": "S1 水封罐",
+      "overview": "常减压装置 支管水封，防止回火与串气。",
+      "nodeKey": "S.S1.WSIN",
+      "pos": [
+        -92,
+        3.6,
+        -34
+      ],
+      "dn": 500,
+      "radius": 1.5,
+      "height": 7.2,
+      "sealHeightMm": 1200,
+      "designFlow": 3420
+    },
+    {
+      "id": "S1",
+      "type": "source",
+      "name": "S1 常减压装置",
+      "overview": "装置泄放气经水封罐并入 1# 火炬总管。",
+      "nodeKey": "S.S1.MAN",
+      "pos": [
+        -92,
+        3,
+        -78
+      ],
+      "dn": 500,
+      "subNodes": [
+        "S.S1.SUB1",
+        "S.S1.SUB2"
+      ],
+      "split": [
+        0.55,
+        0.44999999999999996
+      ]
+    },
+    {
+      "id": "WS-S2",
+      "type": "waterseal",
+      "name": "S2 水封罐",
+      "overview": "催化裂化装置 支管水封，防止回火与串气。",
+      "nodeKey": "S.S2.WSIN",
+      "pos": [
+        -68,
+        3.6,
+        -34
+      ],
+      "dn": 600,
+      "radius": 1.5,
+      "height": 7.2,
+      "sealHeightMm": 1200,
+      "designFlow": 3250
+    },
+    {
+      "id": "S2",
+      "type": "source",
+      "name": "S2 催化裂化装置",
+      "overview": "装置泄放气经水封罐并入 1# 火炬总管。",
+      "nodeKey": "S.S2.MAN",
+      "pos": [
+        -68,
+        3,
+        -78
+      ],
+      "dn": 600,
+      "subNodes": [
+        "S.S2.SUB1",
+        "S.S2.SUB2"
+      ],
+      "split": [
+        0.6,
+        0.4
+      ]
+    },
+    {
+      "id": "WS-S3",
+      "type": "waterseal",
+      "name": "S3 水封罐",
+      "overview": "加氢裂化装置 支管水封，防止回火与串气。",
+      "nodeKey": "S.S3.WSIN",
+      "pos": [
+        -44,
+        3.6,
+        -34
+      ],
+      "dn": 500,
+      "radius": 1.5,
+      "height": 7.2,
+      "sealHeightMm": 1200,
+      "designFlow": 3300
+    },
+    {
+      "id": "S3",
+      "type": "source",
+      "name": "S3 加氢裂化装置",
+      "overview": "装置泄放气经水封罐并入 1# 火炬总管。",
+      "nodeKey": "S.S3.MAN",
+      "pos": [
+        -44,
+        3,
+        -78
+      ],
+      "dn": 500,
+      "subNodes": [
+        "S.S3.SUB1",
+        "S.S3.SUB2"
+      ],
+      "split": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "WS-S4",
+      "type": "waterseal",
+      "name": "S4 水封罐",
+      "overview": "延迟焦化装置 支管水封，防止回火与串气。",
+      "nodeKey": "S.S4.WSIN",
+      "pos": [
+        -20,
+        3.6,
+        -34
+      ],
+      "dn": 450,
+      "radius": 1.5,
+      "height": 7.2,
+      "sealHeightMm": 1200,
+      "designFlow": 1920
+    },
+    {
+      "id": "S4",
+      "type": "source",
+      "name": "S4 延迟焦化装置",
+      "overview": "装置泄放气经水封罐并入 1# 火炬总管。",
+      "nodeKey": "S.S4.MAN",
+      "pos": [
+        -20,
+        3,
+        -78
+      ],
+      "dn": 450,
+      "subNodes": [
+        "S.S4.SUB1",
+        "S.S4.SUB2"
+      ],
+      "split": [
+        0.55,
+        0.44999999999999996
+      ]
+    },
+    {
+      "id": "WS-S5",
+      "type": "waterseal",
+      "name": "S5 水封罐",
+      "overview": "连续重整装置 支管水封，防止回火与串气。",
+      "nodeKey": "S.S5.WSIN",
+      "pos": [
+        4,
+        3.6,
+        -34
+      ],
+      "dn": 400,
+      "radius": 1.5,
+      "height": 7.2,
+      "sealHeightMm": 1200,
+      "designFlow": 2160
+    },
+    {
+      "id": "S5",
+      "type": "source",
+      "name": "S5 连续重整装置",
+      "overview": "装置泄放气经水封罐并入 1# 火炬总管。",
+      "nodeKey": "S.S5.MAN",
+      "pos": [
+        4,
+        3,
+        -78
+      ],
+      "dn": 400,
+      "subNodes": [
+        "S.S5.SUB1",
+        "S.S5.SUB2"
+      ],
+      "split": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "WS-S6",
+      "type": "waterseal",
+      "name": "S6 水封罐",
+      "overview": "罐区 支管水封，防止回火与串气。",
+      "nodeKey": "S.S6.WSIN",
+      "pos": [
+        28,
+        3.6,
+        -34
+      ],
+      "dn": 350,
+      "radius": 1.5,
+      "height": 7.2,
+      "sealHeightMm": 1200,
+      "designFlow": 1600
+    },
+    {
+      "id": "S6",
+      "type": "source",
+      "name": "S6 罐区",
+      "overview": "装置泄放气经水封罐并入 1# 火炬总管。",
+      "nodeKey": "S.S6.MAN",
+      "pos": [
+        28,
+        3,
+        -78
+      ],
+      "dn": 350,
+      "subNodes": [
+        "S.S6.SUB1",
+        "S.S6.SUB2"
+      ],
+      "split": [
+        0.6,
+        0.4
+      ]
+    },
+    {
+      "id": "WS-S7",
+      "type": "waterseal",
+      "name": "S7 水封罐",
+      "overview": "乙烯裂解装置 支管水封，防止回火与串气。",
+      "nodeKey": "S.S7.WSIN",
+      "pos": [
+        -80,
+        3.6,
+        34
+      ],
+      "dn": 600,
+      "radius": 1.5,
+      "height": 7.2,
+      "sealHeightMm": 1200,
+      "designFlow": 3120
+    },
+    {
+      "id": "S7",
+      "type": "source",
+      "name": "S7 乙烯裂解装置",
+      "overview": "装置泄放气经水封罐并入 2# 火炬总管。",
+      "nodeKey": "S.S7.MAN",
+      "pos": [
+        -80,
+        3,
+        78
+      ],
+      "dn": 600,
+      "subNodes": [
+        "S.S7.SUB1",
+        "S.S7.SUB2"
+      ],
+      "split": [
+        0.55,
+        0.44999999999999996
+      ]
+    },
+    {
+      "id": "WS-S8",
+      "type": "waterseal",
+      "name": "S8 水封罐",
+      "overview": "硫磺回收装置 支管水封，防止回火与串气。",
+      "nodeKey": "S.S8.WSIN",
+      "pos": [
+        -56,
+        3.6,
+        34
+      ],
+      "dn": 350,
+      "radius": 1.5,
+      "height": 7.2,
+      "sealHeightMm": 1200,
+      "designFlow": 1740
+    },
+    {
+      "id": "S8",
+      "type": "source",
+      "name": "S8 硫磺回收装置",
+      "overview": "装置泄放气经水封罐并入 2# 火炬总管。",
+      "nodeKey": "S.S8.MAN",
+      "pos": [
+        -56,
+        3,
+        78
+      ],
+      "dn": 350,
+      "subNodes": [
+        "S.S8.SUB1",
+        "S.S8.SUB2"
+      ],
+      "split": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "WS-S9",
+      "type": "waterseal",
+      "name": "S9 水封罐",
+      "overview": "芳烃联合装置 支管水封，防止回火与串气。",
+      "nodeKey": "S.S9.WSIN",
+      "pos": [
+        -32,
+        3.6,
+        34
+      ],
+      "dn": 450,
+      "radius": 1.5,
+      "height": 7.2,
+      "sealHeightMm": 1200,
+      "designFlow": 2210
+    },
+    {
+      "id": "S9",
+      "type": "source",
+      "name": "S9 芳烃联合装置",
+      "overview": "装置泄放气经水封罐并入 2# 火炬总管。",
+      "nodeKey": "S.S9.MAN",
+      "pos": [
+        -32,
+        3,
+        78
+      ],
+      "dn": 450,
+      "subNodes": [
+        "S.S9.SUB1",
+        "S.S9.SUB2"
+      ],
+      "split": [
+        0.55,
+        0.44999999999999996
+      ]
+    },
+    {
+      "id": "WS-S10",
+      "type": "waterseal",
+      "name": "S10 水封罐",
+      "overview": "气体分馏装置 支管水封，防止回火与串气。",
+      "nodeKey": "S.S10.WSIN",
+      "pos": [
+        -8,
+        3.6,
+        34
+      ],
+      "dn": 400,
+      "radius": 1.5,
+      "height": 7.2,
+      "sealHeightMm": 1200,
+      "designFlow": 1680
+    },
+    {
+      "id": "S10",
+      "type": "source",
+      "name": "S10 气体分馏装置",
+      "overview": "装置泄放气经水封罐并入 2# 火炬总管。",
+      "nodeKey": "S.S10.MAN",
+      "pos": [
+        -8,
+        3,
+        78
+      ],
+      "dn": 400,
+      "subNodes": [
+        "S.S10.SUB1",
+        "S.S10.SUB2"
+      ],
+      "split": [
+        0.6,
+        0.4
+      ]
+    },
+    {
+      "id": "WS-S11",
+      "type": "waterseal",
+      "name": "S11 水封罐",
+      "overview": "污水处理场 支管水封，防止回火与串气。",
+      "nodeKey": "S.S11.WSIN",
+      "pos": [
+        16,
+        3.6,
+        34
+      ],
+      "dn": 300,
+      "radius": 1.5,
+      "height": 7.2,
+      "sealHeightMm": 1200,
+      "designFlow": 1200
+    },
+    {
+      "id": "S11",
+      "type": "source",
+      "name": "S11 污水处理场",
+      "overview": "装置泄放气经水封罐并入 2# 火炬总管。",
+      "nodeKey": "S.S11.MAN",
+      "pos": [
+        16,
+        3,
+        78
+      ],
+      "dn": 300,
+      "subNodes": [
+        "S.S11.SUB1",
+        "S.S11.SUB2"
+      ],
+      "split": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "WS-S12",
+      "type": "waterseal",
+      "name": "S12 水封罐",
+      "overview": "火炬气回收单元 支管水封，防止回火与串气。",
+      "nodeKey": "S.S12.WSIN",
+      "pos": [
+        40,
+        3.6,
+        34
+      ],
+      "dn": 500,
+      "radius": 1.5,
+      "height": 7.2,
+      "sealHeightMm": 1200,
+      "designFlow": 2100
+    },
+    {
+      "id": "S12",
+      "type": "source",
+      "name": "S12 火炬气回收单元",
+      "overview": "装置泄放气经水封罐并入 2# 火炬总管。",
+      "nodeKey": "S.S12.MAN",
+      "pos": [
+        40,
+        3,
+        78
+      ],
+      "dn": 500,
+      "subNodes": [
+        "S.S12.SUB1",
+        "S.S12.SUB2"
+      ],
+      "split": [
+        0.55,
+        0.44999999999999996
+      ]
+    },
+    {
+      "id": "KO-1",
+      "type": "knockout",
+      "name": "1# 分液罐",
+      "overview": "卧式分液罐，脱除火炬气中的凝液后再进入主水封。",
+      "nodeKey": "KO1.IN",
+      "pos": [
+        100,
+        4.6,
+        -6
+      ],
+      "dn": 900,
+      "radius": 2.8,
+      "length": 12
+    },
+    {
+      "id": "KO-2",
+      "type": "knockout",
+      "name": "2# 分液罐",
+      "overview": "2# 系统卧式分液罐，事故工况与跨线来气均经此脱液。",
+      "nodeKey": "KO2.IN",
+      "pos": [
+        100,
+        4.6,
+        26
+      ],
+      "dn": 1000,
+      "radius": 2.8,
+      "length": 12
+    },
+    {
+      "id": "WS-MAIN",
+      "type": "waterseal",
+      "name": "主水封罐",
+      "overview": "全厂火炬总管的最终水封，防止回火至管网。",
+      "nodeKey": "WSM.IN",
+      "pos": [
+        118,
+        3.75,
+        4
+      ],
+      "dn": 1200,
+      "radius": 2,
+      "height": 7.8,
+      "sealHeightMm": 1500,
+      "designFlow": 17595
+    },
+    {
+      "id": "F1",
+      "type": "flare",
+      "name": "1# 火炬",
+      "overview": "主火炬，高 90 m，正常与事故工况投用。",
+      "nodeKey": "F1.Y90",
+      "pos": [
+        150,
+        90,
+        -20
+      ],
+      "base": [
+        150,
+        0,
+        -20
+      ],
+      "height": 90,
+      "dn": 1200
+    },
+    {
+      "id": "F2",
+      "type": "flare",
+      "name": "2# 火炬",
+      "overview": "辅助火炬，高 66 m，事故工况与 1# 火炬并行，检修时单独承担排放。",
+      "nodeKey": "F2.Y66",
+      "pos": [
+        150,
+        66,
+        40
+      ],
+      "base": [
+        150,
+        0,
+        40
+      ],
+      "height": 66,
+      "dn": 1000
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "name": "常减压装置",
+      "shortName": "常减压",
+      "en": "CDU",
+      "header": "H1",
+      "nodeKey": "S.S1.MAN",
+      "subNodeKeys": [
+        "S.S1.SUB1",
+        "S.S1.SUB2"
+      ],
+      "split": [
+        0.55,
+        0.44999999999999996
+      ],
+      "tieNodeKey": "H1@-92",
+      "dn": 500,
+      "defaultFlows": {
+        "normal": 1800,
+        "emergency": 7200,
+        "maintenance": 0
+      }
+    },
+    {
+      "id": "S2",
+      "name": "催化裂化装置",
+      "shortName": "催化裂化",
+      "en": "FCC",
+      "header": "H1",
+      "nodeKey": "S.S2.MAN",
+      "subNodeKeys": [
+        "S.S2.SUB1",
+        "S.S2.SUB2"
+      ],
+      "split": [
+        0.6,
+        0.4
+      ],
+      "tieNodeKey": "H1@-68",
+      "dn": 600,
+      "defaultFlows": {
+        "normal": 2600,
+        "emergency": 9500,
+        "maintenance": 1600
+      }
+    },
+    {
+      "id": "S3",
+      "name": "加氢裂化装置",
+      "shortName": "加氢裂化",
+      "en": "HCU",
+      "header": "H1",
+      "nodeKey": "S.S3.MAN",
+      "subNodeKeys": [
+        "S.S3.SUB1",
+        "S.S3.SUB2"
+      ],
+      "split": [
+        0.5,
+        0.5
+      ],
+      "tieNodeKey": "H1@-44",
+      "dn": 500,
+      "defaultFlows": {
+        "normal": 1500,
+        "emergency": 6000,
+        "maintenance": 0
+      }
+    },
+    {
+      "id": "S4",
+      "name": "延迟焦化装置",
+      "shortName": "延迟焦化",
+      "en": "DCU",
+      "header": "H1",
+      "nodeKey": "S.S4.MAN",
+      "subNodeKeys": [
+        "S.S4.SUB1",
+        "S.S4.SUB2"
+      ],
+      "split": [
+        0.55,
+        0.44999999999999996
+      ],
+      "tieNodeKey": "H1@-20",
+      "dn": 450,
+      "defaultFlows": {
+        "normal": 1200,
+        "emergency": 5200,
+        "maintenance": 0
+      }
+    },
+    {
+      "id": "S5",
+      "name": "连续重整装置",
+      "shortName": "连续重整",
+      "en": "CCR",
+      "header": "H1",
+      "nodeKey": "S.S5.MAN",
+      "subNodeKeys": [
+        "S.S5.SUB1",
+        "S.S5.SUB2"
+      ],
+      "split": [
+        0.5,
+        0.5
+      ],
+      "tieNodeKey": "H1@4",
+      "dn": 400,
+      "defaultFlows": {
+        "normal": 900,
+        "emergency": 3800,
+        "maintenance": 700
+      }
+    },
+    {
+      "id": "S6",
+      "name": "罐区",
+      "shortName": "罐区",
+      "en": "TANK",
+      "header": "H1",
+      "nodeKey": "S.S6.MAN",
+      "subNodeKeys": [
+        "S.S6.SUB1",
+        "S.S6.SUB2"
+      ],
+      "split": [
+        0.6,
+        0.4
+      ],
+      "tieNodeKey": "H1@28",
+      "dn": 350,
+      "defaultFlows": {
+        "normal": 500,
+        "emergency": 2400,
+        "maintenance": 350
+      }
+    },
+    {
+      "id": "S7",
+      "name": "乙烯裂解装置",
+      "shortName": "乙烯裂解",
+      "en": "ETHY",
+      "header": "H2",
+      "nodeKey": "S.S7.MAN",
+      "subNodeKeys": [
+        "S.S7.SUB1",
+        "S.S7.SUB2"
+      ],
+      "split": [
+        0.55,
+        0.44999999999999996
+      ],
+      "tieNodeKey": "H2@-80",
+      "dn": 600,
+      "defaultFlows": {
+        "normal": 2400,
+        "emergency": 9000,
+        "maintenance": 2200
+      }
+    },
+    {
+      "id": "S8",
+      "name": "硫磺回收装置",
+      "shortName": "硫磺回收",
+      "en": "SRU",
+      "header": "H2",
+      "nodeKey": "S.S8.MAN",
+      "subNodeKeys": [
+        "S.S8.SUB1",
+        "S.S8.SUB2"
+      ],
+      "split": [
+        0.5,
+        0.5
+      ],
+      "tieNodeKey": "H2@-56",
+      "dn": 350,
+      "defaultFlows": {
+        "normal": 600,
+        "emergency": 2200,
+        "maintenance": 400
+      }
+    },
+    {
+      "id": "S9",
+      "name": "芳烃联合装置",
+      "shortName": "芳烃联合",
+      "en": "AROM",
+      "header": "H2",
+      "nodeKey": "S.S9.MAN",
+      "subNodeKeys": [
+        "S.S9.SUB1",
+        "S.S9.SUB2"
+      ],
+      "split": [
+        0.55,
+        0.44999999999999996
+      ],
+      "tieNodeKey": "H2@-32",
+      "dn": 450,
+      "defaultFlows": {
+        "normal": 1300,
+        "emergency": 5000,
+        "maintenance": 1100
+      }
+    },
+    {
+      "id": "S10",
+      "name": "气体分馏装置",
+      "shortName": "气体分馏",
+      "en": "GFU",
+      "header": "H2",
+      "nodeKey": "S.S10.MAN",
+      "subNodeKeys": [
+        "S.S10.SUB1",
+        "S.S10.SUB2"
+      ],
+      "split": [
+        0.6,
+        0.4
+      ],
+      "tieNodeKey": "H2@-8",
+      "dn": 400,
+      "defaultFlows": {
+        "normal": 800,
+        "emergency": 3200,
+        "maintenance": 600
+      }
+    },
+    {
+      "id": "S11",
+      "name": "污水处理场",
+      "shortName": "污水处理",
+      "en": "WWTP",
+      "header": "H2",
+      "nodeKey": "S.S11.MAN",
+      "subNodeKeys": [
+        "S.S11.SUB1",
+        "S.S11.SUB2"
+      ],
+      "split": [
+        0.5,
+        0.5
+      ],
+      "tieNodeKey": "H2@16",
+      "dn": 300,
+      "defaultFlows": {
+        "normal": 300,
+        "emergency": 1100,
+        "maintenance": 250
+      }
+    },
+    {
+      "id": "S12",
+      "name": "火炬气回收单元",
+      "shortName": "气回收",
+      "en": "FGR",
+      "header": "H2",
+      "nodeKey": "S.S12.MAN",
+      "subNodeKeys": [
+        "S.S12.SUB1",
+        "S.S12.SUB2"
+      ],
+      "split": [
+        0.55,
+        0.44999999999999996
+      ],
+      "tieNodeKey": "H2@40",
+      "dn": 500,
+      "defaultFlows": {
+        "normal": 1400,
+        "emergency": 4600,
+        "maintenance": 1200
+      }
+    }
+  ],
+  "conditions": {
+    "normal": {
+      "label": "正常排放",
+      "description": "装置正常运行，各排放源按设计泄放量排放；1# 火炬投用，2# 火炬及跨线切断阀关闭。",
+      "flows": {
+        "S1": 1800,
+        "S2": 2600,
+        "S3": 1500,
+        "S4": 1200,
+        "S5": 900,
+        "S6": 500,
+        "S7": 2400,
+        "S8": 600,
+        "S9": 1300,
+        "S10": 800,
+        "S11": 300,
+        "S12": 1400
+      },
+      "closed": [
+        "branch:R2",
+        "branch:XO"
+      ]
+    },
+    "emergency": {
+      "label": "事故排放",
+      "description": "全厂事故泄放，全部排放源按事故泄放量排放；1#、2# 火炬同时投用，跨线打开。",
+      "flows": {
+        "S1": 7200,
+        "S2": 9500,
+        "S3": 6000,
+        "S4": 5200,
+        "S5": 3800,
+        "S6": 2400,
+        "S7": 9000,
+        "S8": 2200,
+        "S9": 5000,
+        "S10": 3200,
+        "S11": 1100,
+        "S12": 4600
+      },
+      "closed": []
+    },
+    "maintenance": {
+      "label": "检修",
+      "description": "1# 火炬及加氢裂化、延迟焦化支路切出检修；乙烯裂解 B 支路隔离，排放由 2# 火炬承担。",
+      "flows": {
+        "S1": 0,
+        "S2": 1600,
+        "S3": 0,
+        "S4": 0,
+        "S5": 700,
+        "S6": 350,
+        "S7": 2200,
+        "S8": 400,
+        "S9": 1100,
+        "S10": 600,
+        "S11": 250,
+        "S12": 1200
+      },
+      "closed": [
+        "branch:R1",
+        "branch:S3",
+        "branch:S4",
+        "line:S7:B"
+      ]
+    }
+  },
+  "params": {
+    "branchResistance": {
+      "MAIN": 1,
+      "R1": 1,
+      "R2": 1,
+      "H1": 1,
+      "H2": 1,
+      "XO": 1,
+      "S1": 1,
+      "S2": 1,
+      "S3": 1,
+      "S4": 1,
+      "S5": 1,
+      "S6": 1,
+      "S7": 1,
+      "S8": 1,
+      "S9": 1,
+      "S10": 1,
+      "S11": 1,
+      "S12": 1
+    },
+    "sealHeightMm": {
+      "WS-S1": 1200,
+      "WS-S2": 1200,
+      "WS-S3": 1200,
+      "WS-S4": 1200,
+      "WS-S5": 1200,
+      "WS-S6": 1200,
+      "WS-S7": 1200,
+      "WS-S8": 1200,
+      "WS-S9": 1200,
+      "WS-S10": 1200,
+      "WS-S11": 1200,
+      "WS-S12": 1200,
+      "WS-MAIN": 1500
+    },
+    "sourceSplit": {
+      "S1": [
+        0.55,
+        0.44999999999999996
+      ],
+      "S2": [
+        0.6,
+        0.4
+      ],
+      "S3": [
+        0.5,
+        0.5
+      ],
+      "S4": [
+        0.55,
+        0.44999999999999996
+      ],
+      "S5": [
+        0.5,
+        0.5
+      ],
+      "S6": [
+        0.6,
+        0.4
+      ],
+      "S7": [
+        0.55,
+        0.44999999999999996
+      ],
+      "S8": [
+        0.5,
+        0.5
+      ],
+      "S9": [
+        0.55,
+        0.44999999999999996
+      ],
+      "S10": [
+        0.6,
+        0.4
+      ],
+      "S11": [
+        0.5,
+        0.5
+      ],
+      "S12": [
+        0.55,
+        0.44999999999999996
+      ]
+    },
+    "stripeSpeed": 1,
+    "pipeScale": 1
+  }
+}

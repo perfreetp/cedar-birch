@@ -1,0 +1,22 @@
+{
+  "name": "flare-network-visualizer",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "炼化火炬管网流向可视化工具",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "gen": "node scripts/generate-network.mjs"
+  },
+  "dependencies": {
+    "@babylonjs/core": "9.37.1",
+    "vue": "3.5.46"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "6.0.11",
+    "playwright": "^1.65.1",
+    "vite": "8.3.8"
+  }
+}
