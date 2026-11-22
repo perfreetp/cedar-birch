@@ -1,0 +1,23 @@
+import { defineConfig } from 'vite';
+import solid from 'vite-plugin-solid';
+
+export default defineConfig({
+  plugins: [solid()],
+  server: {
+    port: 5180,
+    host: '127.0.0.1',
+  },
+  build: {
+    target: 'es2022',
+    sourcemap: true,
+    chunkSizeWarningLimit: 900,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          three: ['three', 'three-mesh-bvh'],
+          solid: ['solid-js'],
+        },
+      },
+    },
+  },
+});
