@@ -1,0 +1,890 @@
+{
+  "meta": {
+    "name": "示例台风 TY-DEMO (合成数据)",
+    "schema": "typhoon-profile-v1",
+    "generatedBy": "typhoon-viz sample generator",
+    "unit": {
+      "distance": "km",
+      "pressure": "hPa",
+      "wind": "m/s",
+      "altitude": "m"
+    }
+  },
+  "levels": [
+    0,
+    500,
+    1500,
+    3000,
+    5500,
+    7500,
+    10000,
+    13000,
+    16000
+  ],
+  "steps": [
+    {
+      "t": 0,
+      "time": "T+00h",
+      "name": "T00",
+      "center": {
+        "lon": 132,
+        "lat": 12
+      },
+      "centralPressure": 985,
+      "maxSustainedWind": 29.5,
+      "rmw": 56,
+      "radiusOuter": 180,
+      "pressureProfile": [
+        985,
+        927.9,
+        821.6,
+        680.8,
+        489.7,
+        370.2,
+        255.1,
+        156.8,
+        91.5
+      ],
+      "windProfile": [
+        29.5,
+        31.9,
+        33,
+        31,
+        27.1,
+        23,
+        17.7,
+        12.4,
+        8.3
+      ],
+      "heading": 300
+    },
+    {
+      "t": 1,
+      "time": "T+03h",
+      "name": "T01",
+      "center": {
+        "lon": 131.48,
+        "lat": 12.41
+      },
+      "centralPressure": 981.6,
+      "maxSustainedWind": 33.8,
+      "rmw": 52.9,
+      "radiusOuter": 190.5,
+      "pressureProfile": [
+        981.6,
+        924.7,
+        818.8,
+        678.4,
+        487.9,
+        368.8,
+        254,
+        156,
+        91
+      ],
+      "windProfile": [
+        33.8,
+        36.5,
+        37.8,
+        35.5,
+        31.1,
+        26.3,
+        20.3,
+        14.2,
+        9.5
+      ],
+      "heading": -52
+    },
+    {
+      "t": 2,
+      "time": "T+06h",
+      "name": "T02",
+      "center": {
+        "lon": 131.01,
+        "lat": 12.82
+      },
+      "centralPressure": 976.6,
+      "maxSustainedWind": 37.4,
+      "rmw": 49.1,
+      "radiusOuter": 200.5,
+      "pressureProfile": [
+        976.6,
+        919.9,
+        814.5,
+        674.8,
+        485.2,
+        366.6,
+        252.3,
+        154.8,
+        90.1
+      ],
+      "windProfile": [
+        37.4,
+        40.4,
+        41.9,
+        39.3,
+        34.4,
+        29.2,
+        22.5,
+        15.7,
+        10.5
+      ],
+      "heading": -49
+    },
+    {
+      "t": 3,
+      "time": "T+09h",
+      "name": "T03",
+      "center": {
+        "lon": 130.6,
+        "lat": 13.21
+      },
+      "centralPressure": 969.5,
+      "maxSustainedWind": 40.8,
+      "rmw": 44.9,
+      "radiusOuter": 209.5,
+      "pressureProfile": [
+        969.5,
+        913.3,
+        808.6,
+        669.8,
+        481.3,
+        363.5,
+        250,
+        153.2,
+        88.9
+      ],
+      "windProfile": [
+        40.8,
+        44.1,
+        45.7,
+        42.8,
+        37.5,
+        31.8,
+        24.5,
+        17.1,
+        11.4
+      ],
+      "heading": -46
+    },
+    {
+      "t": 4,
+      "time": "T+12h",
+      "name": "T04",
+      "center": {
+        "lon": 130.25,
+        "lat": 13.58
+      },
+      "centralPressure": 961.8,
+      "maxSustainedWind": 44.3,
+      "rmw": 40.7,
+      "radiusOuter": 217.2,
+      "pressureProfile": [
+        961.8,
+        906,
+        802.1,
+        664.3,
+        477.2,
+        360.2,
+        247.4,
+        151.4,
+        87.6
+      ],
+      "windProfile": [
+        44.3,
+        47.8,
+        49.6,
+        46.5,
+        40.7,
+        34.5,
+        26.6,
+        18.6,
+        12.4
+      ],
+      "heading": -43
+    },
+    {
+      "t": 5,
+      "time": "T+15h",
+      "name": "T05",
+      "center": {
+        "lon": 129.95,
+        "lat": 13.95
+      },
+      "centralPressure": 955.6,
+      "maxSustainedWind": 48.1,
+      "rmw": 36.9,
+      "radiusOuter": 223.3,
+      "pressureProfile": [
+        955.6,
+        900,
+        796.7,
+        659.7,
+        473.8,
+        357.4,
+        245.4,
+        149.9,
+        86.6
+      ],
+      "windProfile": [
+        48.1,
+        51.9,
+        53.8,
+        50.5,
+        44.2,
+        37.5,
+        28.8,
+        20.2,
+        13.5
+      ],
+      "heading": -39
+    },
+    {
+      "t": 6,
+      "time": "T+18h",
+      "name": "T06",
+      "center": {
+        "lon": 129.71,
+        "lat": 14.3
+      },
+      "centralPressure": 952,
+      "maxSustainedWind": 52.1,
+      "rmw": 33.8,
+      "radiusOuter": 227.9,
+      "pressureProfile": [
+        952,
+        896.7,
+        793.7,
+        657.2,
+        471.8,
+        355.9,
+        244.2,
+        149,
+        86
+      ],
+      "windProfile": [
+        52.1,
+        56.3,
+        58.4,
+        54.7,
+        47.9,
+        40.6,
+        31.3,
+        21.9,
+        14.6
+      ],
+      "heading": -34
+    },
+    {
+      "t": 7,
+      "time": "T+21h",
+      "name": "T07",
+      "center": {
+        "lon": 129.52,
+        "lat": 14.65
+      },
+      "centralPressure": 950.7,
+      "maxSustainedWind": 56.1,
+      "rmw": 31.7,
+      "radiusOuter": 231,
+      "pressureProfile": [
+        950.7,
+        895.5,
+        792.6,
+        656.3,
+        471.1,
+        355.3,
+        243.8,
+        148.7,
+        85.8
+      ],
+      "windProfile": [
+        56.1,
+        60.5,
+        62.8,
+        58.9,
+        51.6,
+        43.7,
+        33.6,
+        23.5,
+        15.7
+      ],
+      "heading": -29
+    },
+    {
+      "t": 8,
+      "time": "T+24h",
+      "name": "T08",
+      "center": {
+        "lon": 129.39,
+        "lat": 14.98
+      },
+      "centralPressure": 950.1,
+      "maxSustainedWind": 59.4,
+      "rmw": 30.7,
+      "radiusOuter": 232.9,
+      "pressureProfile": [
+        950.1,
+        894.9,
+        792.1,
+        655.8,
+        470.8,
+        355.1,
+        243.6,
+        148.6,
+        85.6
+      ],
+      "windProfile": [
+        59.4,
+        64.1,
+        66.5,
+        62.3,
+        54.6,
+        46.3,
+        35.6,
+        24.9,
+        16.6
+      ],
+      "heading": -22
+    },
+    {
+      "t": 9,
+      "time": "T+27h",
+      "name": "T09",
+      "center": {
+        "lon": 129.32,
+        "lat": 15.29
+      },
+      "centralPressure": 948.3,
+      "maxSustainedWind": 61.5,
+      "rmw": 30.7,
+      "radiusOuter": 233.9,
+      "pressureProfile": [
+        948.3,
+        893.2,
+        790.6,
+        654.6,
+        469.8,
+        354.3,
+        243,
+        148.2,
+        85.4
+      ],
+      "windProfile": [
+        61.5,
+        66.5,
+        68.9,
+        64.6,
+        56.6,
+        48,
+        36.9,
+        25.8,
+        17.2
+      ],
+      "heading": -13
+    },
+    {
+      "t": 10,
+      "time": "T+30h",
+      "name": "T10",
+      "center": {
+        "lon": 129.3,
+        "lat": 15.6
+      },
+      "centralPressure": 945.1,
+      "maxSustainedWind": 62.4,
+      "rmw": 31.6,
+      "radiusOuter": 234.2,
+      "pressureProfile": [
+        945.1,
+        890.2,
+        787.9,
+        652.3,
+        468.1,
+        352.9,
+        241.9,
+        147.4,
+        84.8
+      ],
+      "windProfile": [
+        62.4,
+        67.4,
+        69.9,
+        65.5,
+        57.4,
+        48.7,
+        37.5,
+        26.2,
+        17.5
+      ],
+      "heading": -3
+    },
+    {
+      "t": 11,
+      "time": "T+33h",
+      "name": "T11",
+      "center": {
+        "lon": 129.34,
+        "lat": 15.89
+      },
+      "centralPressure": 941.7,
+      "maxSustainedWind": 62.2,
+      "rmw": 33,
+      "radiusOuter": 234.2,
+      "pressureProfile": [
+        941.7,
+        886.9,
+        785,
+        649.8,
+        466.2,
+        351.4,
+        240.8,
+        146.6,
+        84.2
+      ],
+      "windProfile": [
+        62.2,
+        67.1,
+        69.6,
+        65.3,
+        57.2,
+        48.5,
+        37.3,
+        26.1,
+        17.4
+      ],
+      "heading": 7
+    },
+    {
+      "t": 12,
+      "time": "T+36h",
+      "name": "T12",
+      "center": {
+        "lon": 129.43,
+        "lat": 16.18
+      },
+      "centralPressure": 940.2,
+      "maxSustainedWind": 61.1,
+      "rmw": 34.6,
+      "radiusOuter": 233.9,
+      "pressureProfile": [
+        940.2,
+        885.5,
+        783.7,
+        648.7,
+        465.4,
+        350.7,
+        240.3,
+        146.2,
+        84
+      ],
+      "windProfile": [
+        61.1,
+        66,
+        68.5,
+        64.2,
+        56.3,
+        47.7,
+        36.7,
+        25.7,
+        17.1
+      ],
+      "heading": 18
+    },
+    {
+      "t": 13,
+      "time": "T+39h",
+      "name": "T13",
+      "center": {
+        "lon": 129.58,
+        "lat": 16.45
+      },
+      "centralPressure": 941.6,
+      "maxSustainedWind": 59.9,
+      "rmw": 36,
+      "radiusOuter": 233.4,
+      "pressureProfile": [
+        941.6,
+        886.8,
+        784.9,
+        649.7,
+        466.2,
+        351.4,
+        240.8,
+        146.6,
+        84.2
+      ],
+      "windProfile": [
+        59.9,
+        64.7,
+        67.1,
+        62.9,
+        55.1,
+        46.7,
+        35.9,
+        25.1,
+        16.8
+      ],
+      "heading": 29
+    },
+    {
+      "t": 14,
+      "time": "T+42h",
+      "name": "T14",
+      "center": {
+        "lon": 129.79,
+        "lat": 16.7
+      },
+      "centralPressure": 945.5,
+      "maxSustainedWind": 58.6,
+      "rmw": 37.2,
+      "radiusOuter": 232.7,
+      "pressureProfile": [
+        945.5,
+        890.5,
+        788.2,
+        652.6,
+        468.3,
+        353.1,
+        242.1,
+        147.5,
+        84.9
+      ],
+      "windProfile": [
+        58.6,
+        63.3,
+        65.7,
+        61.6,
+        53.9,
+        45.7,
+        35.2,
+        24.6,
+        16.4
+      ],
+      "heading": 39
+    },
+    {
+      "t": 15,
+      "time": "T+45h",
+      "name": "T15",
+      "center": {
+        "lon": 130.05,
+        "lat": 16.95
+      },
+      "centralPressure": 950.1,
+      "maxSustainedWind": 57.5,
+      "rmw": 37.8,
+      "radiusOuter": 231.6,
+      "pressureProfile": [
+        950.1,
+        894.9,
+        792.1,
+        655.9,
+        470.8,
+        355.1,
+        243.6,
+        148.6,
+        85.7
+      ],
+      "windProfile": [
+        57.5,
+        62.1,
+        64.4,
+        60.3,
+        52.9,
+        44.8,
+        34.5,
+        24.1,
+        16.1
+      ],
+      "heading": 47
+    },
+    {
+      "t": 16,
+      "time": "T+48h",
+      "name": "T16",
+      "center": {
+        "lon": 130.37,
+        "lat": 17.18
+      },
+      "centralPressure": 953.6,
+      "maxSustainedWind": 56.1,
+      "rmw": 38.1,
+      "radiusOuter": 229.7,
+      "pressureProfile": [
+        953.6,
+        898.2,
+        795.1,
+        658.3,
+        472.7,
+        356.6,
+        244.7,
+        149.4,
+        86.2
+      ],
+      "windProfile": [
+        56.1,
+        60.6,
+        62.8,
+        58.9,
+        51.6,
+        43.7,
+        33.6,
+        23.6,
+        15.7
+      ],
+      "heading": 54
+    },
+    {
+      "t": 17,
+      "time": "T+51h",
+      "name": "T17",
+      "center": {
+        "lon": 130.74,
+        "lat": 17.41
+      },
+      "centralPressure": 955.5,
+      "maxSustainedWind": 54,
+      "rmw": 38.2,
+      "radiusOuter": 226.8,
+      "pressureProfile": [
+        955.5,
+        900,
+        796.7,
+        659.7,
+        473.7,
+        357.4,
+        245.3,
+        149.9,
+        86.6
+      ],
+      "windProfile": [
+        54,
+        58.3,
+        60.5,
+        56.7,
+        49.7,
+        42.1,
+        32.4,
+        22.7,
+        15.1
+      ],
+      "heading": 59
+    },
+    {
+      "t": 18,
+      "time": "T+54h",
+      "name": "T18",
+      "center": {
+        "lon": 131.17,
+        "lat": 17.62
+      },
+      "centralPressure": 957.1,
+      "maxSustainedWind": 51,
+      "rmw": 38.4,
+      "radiusOuter": 222.6,
+      "pressureProfile": [
+        957.1,
+        901.5,
+        798,
+        660.8,
+        474.6,
+        358.1,
+        245.9,
+        150.2,
+        86.8
+      ],
+      "windProfile": [
+        51,
+        55,
+        57.1,
+        53.5,
+        46.9,
+        39.7,
+        30.6,
+        21.4,
+        14.3
+      ],
+      "heading": 64
+    },
+    {
+      "t": 19,
+      "time": "T+57h",
+      "name": "T19",
+      "center": {
+        "lon": 131.66,
+        "lat": 17.81
+      },
+      "centralPressure": 960.2,
+      "maxSustainedWind": 46.8,
+      "rmw": 39,
+      "radiusOuter": 217,
+      "pressureProfile": [
+        960.2,
+        904.4,
+        800.7,
+        663.1,
+        476.3,
+        359.5,
+        246.9,
+        151,
+        87.4
+      ],
+      "windProfile": [
+        46.8,
+        50.5,
+        52.4,
+        49.1,
+        43,
+        36.5,
+        28.1,
+        19.6,
+        13.1
+      ],
+      "heading": 68
+    },
+    {
+      "t": 20,
+      "time": "T+60h",
+      "name": "T20",
+      "center": {
+        "lon": 132.2,
+        "lat": 18
+      },
+      "centralPressure": 966,
+      "maxSustainedWind": 41.8,
+      "rmw": 40.4,
+      "radiusOuter": 209.8,
+      "pressureProfile": [
+        966,
+        909.9,
+        805.6,
+        667.2,
+        479.4,
+        362,
+        248.8,
+        152.3,
+        88.3
+      ],
+      "windProfile": [
+        41.8,
+        45.1,
+        46.8,
+        43.8,
+        38.4,
+        32.6,
+        25.1,
+        17.5,
+        11.7
+      ],
+      "heading": 71
+    },
+    {
+      "t": 21,
+      "time": "T+63h",
+      "name": "T21",
+      "center": {
+        "lon": 132.8,
+        "lat": 18.17
+      },
+      "centralPressure": 973.8,
+      "maxSustainedWind": 36.4,
+      "rmw": 42.6,
+      "radiusOuter": 201.3,
+      "pressureProfile": [
+        973.8,
+        917.3,
+        812.2,
+        672.8,
+        483.7,
+        365.4,
+        251.4,
+        154.2,
+        89.7
+      ],
+      "windProfile": [
+        36.4,
+        39.3,
+        40.7,
+        38.2,
+        33.5,
+        28.4,
+        21.8,
+        15.3,
+        10.2
+      ],
+      "heading": 74
+    },
+    {
+      "t": 22,
+      "time": "T+66h",
+      "name": "T22",
+      "center": {
+        "lon": 133.45,
+        "lat": 18.34
+      },
+      "centralPressure": 981.7,
+      "maxSustainedWind": 31.2,
+      "rmw": 45.7,
+      "radiusOuter": 191.7,
+      "pressureProfile": [
+        981.7,
+        924.8,
+        818.9,
+        678.5,
+        488,
+        368.8,
+        254,
+        156,
+        91
+      ],
+      "windProfile": [
+        31.2,
+        33.7,
+        34.9,
+        32.8,
+        28.7,
+        24.3,
+        18.7,
+        13.1,
+        8.7
+      ],
+      "heading": 76
+    },
+    {
+      "t": 23,
+      "time": "T+69h",
+      "name": "T23",
+      "center": {
+        "lon": 134.16,
+        "lat": 18.49
+      },
+      "centralPressure": 987.9,
+      "maxSustainedWind": 26.6,
+      "rmw": 49.6,
+      "radiusOuter": 181.3,
+      "pressureProfile": [
+        987.9,
+        930.6,
+        824.1,
+        682.9,
+        491.3,
+        371.5,
+        256,
+        157.5,
+        92
+      ],
+      "windProfile": [
+        26.6,
+        28.7,
+        29.8,
+        27.9,
+        24.5,
+        20.8,
+        16,
+        11.2,
+        7.5
+      ],
+      "heading": 78
+    }
+  ]
+}

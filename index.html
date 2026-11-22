@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>台风结构三维可视化</title>
+    <link rel="stylesheet" href="src/ui/styles.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "/vendor/three/three.module.js",
+          "three/addons/": "/vendor/three/addons/",
+          "postprocessing": "/vendor/postprocessing/build/index.js",
+          "troika-three-text": "/vendor/troika/troika-three-text.esm.js",
+          "troika-three-utils": "/vendor/troika/troika-three-utils.esm.js",
+          "troika-worker-utils": "/vendor/troika/troika-worker-utils.esm.js",
+          "webgl-sdf-generator": "/vendor/troika/webgl-sdf-generator.mjs",
+          "bidi-js": "/vendor/troika/bidi.mjs"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="app">
+      <!-- 区域一: 数据加载 -->
+      <header class="topbar" id="topbar">
+        <div class="brand">
+          <span class="brand-dot"></span>
+          <div>
+            <h1>台风结构三维可视化</h1>
+            <p class="sub">眼壁 · 螺旋雨带 · 外围环流 — 12 万粒子实例化渲染</p>
+          </div>
+        </div>
+        <div class="data-zone">
+          <div class="dataset-meta" id="datasetMeta">未加载数据</div>
+          <label class="btn btn-ghost" for="fileInput">
+            加载层级数据
+            <input type="file" id="fileInput" accept=".json,application/json" hidden />
+          </label>
+          <button class="btn btn-ghost" id="loadSampleBtn">载入示例数据</button>
+          <button class="btn" id="exportPngBtn" disabled>导出 PNG</button>
+          <button class="btn" id="exportJsonBtn" disabled>导出统计 JSON</button>
+        </div>
+      </header>
+
+      <div class="body">
+        <!-- 区域三: 高度切面控制 -->
+        <aside class="sidebar" id="sidebar">
+          <section class="panel">
+            <h2>高度层切面</h2>
+            <label class="check">
+              <input type="checkbox" id="sliceEnable" checked />
+              <span>启用切面 (关闭显示全部高度)</span>
+            </label>
+            <div class="slider-row">
+              <div class="slider-head">
+                <label>切面中心高度</label>
+                <output id="sliceZOut">3,000 m</output>
+              </div>
+              <input type="range" id="sliceZ" min="0" max="16000" step="100" value="3000" />
+              <div class="scale-labels"><span>0 m</span><span>16,000 m</span></div>
+            </div>
+            <div class="slider-row">
+              <div class="slider-head">
+                <label>切面带宽</label>
+                <output id="bandOut">800 m</output>
+              </div>
+              <input type="range" id="band" min="200" max="3000" step="100" value="800" />
+            </div>
+            <div class="slice-readout">
+              <div><span>可见粒子</span><b id="visibleCount">0</b></div>
+              <div><span>占总量</span><b id="visiblePct">0%</b></div>
+            </div>
+          </section>
+
+          <section class="panel">
+            <h2>密度着色 · 5 色阶</h2>
+            <ul class="legend" id="legend">
+              <li><i style="background:#8b0f1c"></i><span>极高密度</span></li>
+              <li><i style="background:#e0532f"></i><span>高密度</span></li>
+              <li><i style="background:#f0b14e"></i><span>中密度</span></li>
+              <li><i style="background:#8fd6d6"></i><span>低密度</span></li>
+              <li><i style="background:#bfe3f5"></i><span>极低密度</span></li>
+            </ul>
+            <p class="hint">拖动切面滑块时按可见粒子实时重算分位阈值并重新着色。</p>
+          </section>
+
+          <section class="panel">
+            <h2>视图与框选</h2>
+            <div class="btn-col">
+              <button class="btn" id="marqueeBtn">框选放大区域</button>
+              <button class="btn btn-ghost" id="restoreBtn">恢复上一视角</button>
+              <button class="btn btn-ghost" id="resetCamBtn">重置相机</button>
+            </div>
+            <p class="hint" id="marqueeHint">框选仅改变相机, 高度切面状态保持不变。</p>
+          </section>
+
+          <section class="panel">
+            <h2>粒子信息</h2>
+            <div id="pickInfo" class="pick-info">
+              <p class="empty">在视图中点击任意粒子查看该点风速与气压</p>
+            </div>
+          </section>
+
+          <section class="panel perf">
+            <h2>性能</h2>
+            <div class="perf-grid">
+              <div><span>FPS</span><b id="fps">--</b></div>
+              <div><span>深度排序</span><b id="sortN">0</b></div>
+            </div>
+          </section>
+        </aside>
+
+        <!-- 区域二: 三维视图 -->
+        <main class="viewport" id="viewport">
+          <canvas id="glCanvas"></canvas>
+          <div class="view-hud">
+            <div class="hud-chip" id="hudStep">时刻 --</div>
+            <div class="hud-chip" id="hudWind">Vmax -- m/s</div>
+            <div class="hud-chip" id="hudPressure">中心气压 -- hPa</div>
+          </div>
+          <div class="tooltip" id="tooltip" hidden></div>
+        </main>
+      </div>
+
+      <!-- 区域四: 时间轴回放 -->
+      <footer class="timeline" id="timeline">
+        <button class="tl-btn" id="playBtn" disabled>▶ 播放</button>
+        <div class="tl-time"><b id="tlTime">T+00h</b><span id="tlName">T00</span></div>
+        <input type="range" id="timeSlider" min="0" max="23" step="0.01" value="0" disabled />
+        <div class="tl-ticks" id="tlTicks"></div>
+        <div class="tl-speed">
+          <label>速度</label>
+          <select id="speedSel">
+            <option value="0.5">0.5×</option>
+            <option value="1" selected>1×</option>
+            <option value="2">2×</option>
+            <option value="4">4×</option>
+          </select>
+        </div>
+        <button class="tl-btn ghost" id="loopBtn">循环: 开</button>
+      </footer>
+    </div>
+
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>

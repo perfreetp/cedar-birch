@@ -1,0 +1,37 @@
+{
+  "name": "typhoon-3d-visualization",
+  "version": "1.0.0",
+  "description": "基于 three.js + postprocessing 的台风结构三维粒子可视化工具",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js 8080",
+    "gen-sample": "node scripts/gen-sample.mjs data/sample-typhoon.json",
+    "test": "node test/smoke.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/perfreetp/cedar-birch.git"
+  },
+  "keywords": [
+    "three.js",
+    "postprocessing",
+    "typhoon",
+    "visualization",
+    "instanced-mesh"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/perfreetp/cedar-birch/issues"
+  },
+  "homepage": "https://github.com/perfreetp/cedar-birch#readme",
+  "dependencies": {
+    "postprocessing": "^6.35.3",
+    "three": "^0.160.1",
+    "troika-three-text": "^0.53.1"
+  },
+  "devDependencies": {
+    "playwright": "^1.65.1"
+  }
+}
